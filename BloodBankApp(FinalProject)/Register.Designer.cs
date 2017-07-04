@@ -53,16 +53,25 @@
             this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroPanel2 = new MetroFramework.Controls.MetroPanel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox5 = new MetroFramework.Controls.MetroTextBox();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matchBloodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toDonateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             metroLabel3 = new MetroFramework.Controls.MetroLabel();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
             metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.menuStrip1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
+            this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroLabel3
@@ -464,21 +473,6 @@
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel2.VerticalScrollbarSize = 10;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton3.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.radioButton3.Location = new System.Drawing.Point(12, 5);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(61, 18);
-            this.radioButton3.TabIndex = 31;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Donor";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
-            // 
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
@@ -493,6 +487,21 @@
             this.radioButton4.Text = "Patient";
             this.radioButton4.UseVisualStyleBackColor = true;
             this.radioButton4.CheckedChanged += new System.EventHandler(this.radioButton4_CheckedChanged);
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton3.Font = new System.Drawing.Font("Algerian", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.radioButton3.Location = new System.Drawing.Point(12, 5);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(61, 18);
+            this.radioButton3.TabIndex = 31;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Donor";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged_1);
             // 
             // metroLabel10
             // 
@@ -541,11 +550,100 @@
             this.metroTextBox5.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox5.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Dock = System.Windows.Forms.DockStyle.None;
+            this.menuStrip2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem4,
+            this.changeDetailsToolStripMenuItem,
+            this.matchBloodToolStripMenuItem,
+            this.toDonateToolStripMenuItem});
+            this.menuStrip2.Location = new System.Drawing.Point(0, 7);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(7, 2, 3, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(1223, 29);
+            this.menuStrip2.TabIndex = 41;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.AutoSize = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.Crimson;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(65, 0, 117, 0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(173, 25);
+            this.toolStripMenuItem1.Text = "Register";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.AutoSize = false;
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.Crimson;
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(140, 0, 117, 0);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(173, 25);
+            this.toolStripMenuItem2.Text = "Patients";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.AutoSize = false;
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.Crimson;
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(115, 0, 117, 0);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(173, 25);
+            this.toolStripMenuItem3.Text = "Search";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.AutoSize = false;
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.Crimson;
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(97, 0, 118, 0);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(173, 25);
+            this.toolStripMenuItem4.Text = "View All Donors";
+            // 
+            // changeDetailsToolStripMenuItem
+            // 
+            this.changeDetailsToolStripMenuItem.AutoSize = false;
+            this.changeDetailsToolStripMenuItem.CheckOnClick = true;
+            this.changeDetailsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeDetailsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.changeDetailsToolStripMenuItem.Name = "changeDetailsToolStripMenuItem";
+            this.changeDetailsToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.changeDetailsToolStripMenuItem.Text = "Change Data";
+            // 
+            // matchBloodToolStripMenuItem
+            // 
+            this.matchBloodToolStripMenuItem.AutoSize = false;
+            this.matchBloodToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchBloodToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.matchBloodToolStripMenuItem.Name = "matchBloodToolStripMenuItem";
+            this.matchBloodToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.matchBloodToolStripMenuItem.Text = "Match Blood";
+            // 
+            // toDonateToolStripMenuItem
+            // 
+            this.toDonateToolStripMenuItem.AutoSize = false;
+            this.toDonateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toDonateToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.toDonateToolStripMenuItem.Name = "toDonateToolStripMenuItem";
+            this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.toDonateToolStripMenuItem.Text = "To Donate";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 614);
+            this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.metroTextBox5);
             this.Controls.Add(this.metroLabel10);
             this.Controls.Add(this.metroPanel2);
@@ -583,6 +681,8 @@
             this.metroPanel1.PerformLayout();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
+            this.menuStrip2.ResumeLayout(false);
+            this.menuStrip2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -616,5 +716,13 @@
         private System.Windows.Forms.RadioButton radioButton3;
         private MetroFramework.Controls.MetroLabel metroLabel10;
         private MetroFramework.Controls.MetroTextBox metroTextBox5;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem changeDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem matchBloodToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toDonateToolStripMenuItem;
     }
 }

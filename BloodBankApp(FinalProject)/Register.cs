@@ -20,7 +20,7 @@ namespace BloodBankApp_FinalProject_
         string radioBtn2;
         private void Register_Load(object sender, EventArgs e)
         {
-
+            menuStrip2.Visible = true ;
         }
 
         private void patientsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,6 +122,11 @@ namespace BloodBankApp_FinalProject_
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
             radioBtn2 = radioButton4.Text;
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
 
         }
     }
