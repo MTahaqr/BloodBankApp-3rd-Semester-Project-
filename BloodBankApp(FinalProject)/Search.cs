@@ -28,15 +28,15 @@ namespace BloodBankApp_FinalProject_
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Register RegisterObj = new Register();
-            this.Hide();
             RegisterObj.Show();
+            this.Hide();
         }
 
         private void patientsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             patients patientsObj = new patients();
-            this.Hide();
             patientsObj.Show();
+            this.Hide();
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -47,8 +47,8 @@ namespace BloodBankApp_FinalProject_
         private void viewAllDonorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Donors DonorsObj = new Donors();
-            this.Hide();
             DonorsObj.Show();
+            this.Hide();
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -79,6 +79,53 @@ namespace BloodBankApp_FinalProject_
         private void metroRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             radioBtn = metroRadioButton2.Text;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Register RegisterObj = new Register();
+            RegisterObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            patients patientsObj = new patients();
+            patientsObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Donors DonorsObj = new Donors();
+            DonorsObj.Show();
+            this.Hide();
+        }
+
+        private void changeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Change ChangeObj = new Change();
+            ChangeObj.Show();
+            this.Hide();
+        }
+
+        private void matchBloodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void toDonateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToDonate ToDonateObj = new ToDonate();
+            ToDonateObj.Show();
+            this.Hide();
         }
     }
 }

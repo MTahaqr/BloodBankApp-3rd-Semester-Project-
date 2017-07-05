@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -73,6 +73,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change.Designer.cs">
+      <DependentUpon>Change.cs</DependentUpon>
+    </Compile>
     <Compile Include="Donors.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,13 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginData.cs" />
+    <Compile Include="MatchBlood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MatchBlood.Designer.cs">
+      <DependentUpon>MatchBlood.cs</DependentUpon>
     </Compile>
     <Compile Include="patients.cs">
       <SubType>Form</SubType>
@@ -136,11 +149,24 @@
     <Compile Include="signUp.Designer.cs">
       <DependentUpon>signUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignUpData.cs" />
+    <Compile Include="ToDonate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToDonate.Designer.cs">
+      <DependentUpon>ToDonate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Change.resx">
+      <DependentUpon>Change.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Donors.resx">
       <DependentUpon>Donors.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchBlood.resx">
+      <DependentUpon>MatchBlood.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="patients.resx">
       <DependentUpon>patients.cs</DependentUpon>
@@ -163,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="signUp.resx">
       <DependentUpon>signUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToDonate.resx">
+      <DependentUpon>ToDonate.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -245,6 +274,13 @@
     <Content Include="RegPatDB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>RegPatDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="signUpDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="signUpDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>signUpDB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

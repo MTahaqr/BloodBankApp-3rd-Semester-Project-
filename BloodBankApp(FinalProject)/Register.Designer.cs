@@ -588,6 +588,7 @@
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(140, 0, 117, 0);
             this.toolStripMenuItem2.Size = new System.Drawing.Size(173, 25);
             this.toolStripMenuItem2.Text = "Patients";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -609,6 +610,7 @@
             this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(97, 0, 118, 0);
             this.toolStripMenuItem4.Size = new System.Drawing.Size(173, 25);
             this.toolStripMenuItem4.Text = "View All Donors";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // changeDetailsToolStripMenuItem
             // 
@@ -619,6 +621,7 @@
             this.changeDetailsToolStripMenuItem.Name = "changeDetailsToolStripMenuItem";
             this.changeDetailsToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
             this.changeDetailsToolStripMenuItem.Text = "Change Data";
+            this.changeDetailsToolStripMenuItem.Click += new System.EventHandler(this.changeDetailsToolStripMenuItem_Click);
             // 
             // matchBloodToolStripMenuItem
             // 
@@ -628,6 +631,7 @@
             this.matchBloodToolStripMenuItem.Name = "matchBloodToolStripMenuItem";
             this.matchBloodToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
             this.matchBloodToolStripMenuItem.Text = "Match Blood";
+            this.matchBloodToolStripMenuItem.Click += new System.EventHandler(this.matchBloodToolStripMenuItem_Click);
             // 
             // toDonateToolStripMenuItem
             // 
@@ -637,6 +641,7 @@
             this.toDonateToolStripMenuItem.Name = "toDonateToolStripMenuItem";
             this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
             this.toDonateToolStripMenuItem.Text = "To Donate";
+            this.toDonateToolStripMenuItem.Click += new System.EventHandler(this.toDonateToolStripMenuItem_Click);
             // 
             // Register
             // 

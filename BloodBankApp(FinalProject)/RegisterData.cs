@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
-    class RegisterData : RegDonorInt 
+    class RegisterData :LoginData , RegDonorInt 
     {
         private string name;
         private string fathersName;
@@ -64,6 +64,10 @@ namespace BloodBankApp_FinalProject_
             set { registerAs = value; }
             get { return registerAs; }
         }
+        public RegisterData()
+        {
+
+        }
         public RegisterData(string nameTxt, string fathersNameTxt, string ageTxt, string addressTxt, string phoneNoTxt, string dobTxt, string genderTxt, string bloodGroupTxt, string registerAsTxt)
         {
             name = nameTxt;
@@ -76,6 +80,8 @@ namespace BloodBankApp_FinalProject_
             bloodGroup = bloodGroupTxt;
             registerAs = registerAsTxt;
         }
+        
+        
         public void RegisterDonor()
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
@@ -83,8 +89,10 @@ namespace BloodBankApp_FinalProject_
             SqlDataAdapter SDA = new SqlDataAdapter("insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address  + "','" + phoneNo  + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs  + "')", connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();
+            
 
         }
+       
     }
     
 }

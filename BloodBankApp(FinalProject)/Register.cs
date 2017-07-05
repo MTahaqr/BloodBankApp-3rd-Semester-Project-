@@ -20,7 +20,8 @@ namespace BloodBankApp_FinalProject_
         string radioBtn2;
         private void Register_Load(object sender, EventArgs e)
         {
-            menuStrip2.Visible = true ;
+            LoginData loginDataObj = new LoginData();
+            menuStrip2.Visible = LoginData.checkLoginAs();
         }
 
         private void patientsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,7 +128,45 @@ namespace BloodBankApp_FinalProject_
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
+            Search SearchObj = new Search();
+            SearchObj.Show();
+            this.Hide();
+        }
 
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            patients patientsObj = new patients();
+            patientsObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Donors DonorsObj = new Donors();
+            DonorsObj.Show();
+            this.Hide();
+
+        }
+
+        private void changeDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Change ChangeDataObj = new Change();
+            ChangeDataObj.Show();
+            this.Hide();
+        }
+
+        private void matchBloodToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void toDonateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ToDonate ToDonateObj = new ToDonate();
+            ToDonateObj.Show();
+            this.Hide();
         }
     }
 }

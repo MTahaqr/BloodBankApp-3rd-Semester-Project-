@@ -19,3 +19,8 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\B
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\bin\Debug\RegisterDB_log.ldf
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\bin\Debug\RegPatDB.mdf
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\bin\Debug\RegPatDB_log.ldf
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\bin\Debug\signUpDB.mdf
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\bin\Debug\signUpDB_log.ldf
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.Change.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.MatchBlood.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.ToDonate.resources

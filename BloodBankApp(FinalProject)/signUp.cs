@@ -25,14 +25,16 @@ namespace BloodBankApp_FinalProject_
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-
+            
         }
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            Register RegisterObj = new Register();
-            this.Hide();
-            RegisterObj.Show();
+            SignUpData SignUpDataObj = new SignUpData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text);
+            SignUpDataObj.signUp();
+            //Register RegisterObj = new Register();
+            //this.Hide();
+            //RegisterObj.Show();
         }
     }
 }

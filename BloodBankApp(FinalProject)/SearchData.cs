@@ -48,6 +48,7 @@ namespace BloodBankApp_FinalProject_
             //SDA.SelectCommand.ExecuteNonQuery();
             //connection.Close();
 
+
         }
         public void RegisterPatient()
         {
