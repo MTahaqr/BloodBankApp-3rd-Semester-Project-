@@ -15,6 +15,12 @@ namespace BloodBankApp_FinalProject_
         public patients()
         {
             InitializeComponent();
+            this.patientsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.patientsToolStripMenuItem.BackColor = Color.Crimson;
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem2.BackColor = Color.Crimson;
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -95,6 +101,13 @@ namespace BloodBankApp_FinalProject_
         {
             ToDonate ToDonateObj = new ToDonate();
             ToDonateObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            patients patientsObj = new patients();
+            patientsObj.Show();
             this.Hide();
         }
     }

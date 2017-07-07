@@ -17,11 +17,17 @@ namespace BloodBankApp_FinalProject_
         public Search()
         {
             InitializeComponent();
+            this.searchToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.searchToolStripMenuItem.BackColor = Color.Crimson;
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem3.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem3.BackColor = Color.Crimson;
         }
 
         private void Search_Load(object sender, EventArgs e)
         {
-          
+            menuStrip2.Visible = LoginData.checkLoginAs();
         }
         string radioBtn;
 

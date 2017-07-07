@@ -15,10 +15,17 @@ namespace BloodBankApp_FinalProject_
         public Donors()
         {
             InitializeComponent();
+            this.viewAllDonorsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewAllDonorsToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.viewAllDonorsToolStripMenuItem.BackColor = Color.Crimson;
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem4.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem4.BackColor = Color.Crimson;
         }
 
         private void Donors_Load(object sender, EventArgs e)
         {
+            menuStrip2.Visible = LoginData.checkLoginAs();
             // TODO: This line of code loads data into the 'registerDBDataSet2.RDBTable' table. You can move, or remove it, as needed.
             this.rDBTableTableAdapter2.Fill(this.registerDBDataSet2.RDBTable);
             // TODO: This line of code loads data into the 'registerDBDataSet1.RDBTable' table. You can move, or remove it, as needed.

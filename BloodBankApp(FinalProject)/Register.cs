@@ -15,6 +15,14 @@ namespace BloodBankApp_FinalProject_
         public Register()
         {
             InitializeComponent();
+            
+            this.registerToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.registerToolStripMenuItem.BackColor = Color.Crimson;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.toolStripMenuItem1.BackColor = Color.Crimson;
+
         }
         string radioBtn1;
         string radioBtn2;
@@ -91,14 +99,18 @@ namespace BloodBankApp_FinalProject_
             if (radioBtn2 == "Donor")
             {
                 RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
-                RegisterDataObj.RegisterDonor();
+                RegisterDataObj.RegisterDonors();
                 MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                RegisterPatientData RegisterPatientDataObj = new RegisterPatientData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
-                RegisterPatientDataObj.RegisterPatient();
-                MetroFramework.MetroMessageBox.Show(this, " Registered"  +radioBtn2  + "SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
+                RegisterDataObj.RegisterPatients();
+                MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                //RegisterPatientData RegisterPatientDataObj = new RegisterPatientData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
+                //RegisterPatientDataObj.RegisterPatient();
+                //MetroFramework.MetroMessageBox.Show(this, " Registered"  +radioBtn2  + "SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 

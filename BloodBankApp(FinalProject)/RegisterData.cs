@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
-    class RegisterData :LoginData , RegDonorInt 
+    class RegisterData : DonorOrPatient 
     {
         private string name;
         private string fathersName;
@@ -18,6 +18,7 @@ namespace BloodBankApp_FinalProject_
         private string gender;
         private string bloodGroup;
         private string registerAs;
+        
         
         public string _name
         {
@@ -82,7 +83,7 @@ namespace BloodBankApp_FinalProject_
         }
         
         
-        public void RegisterDonor()
+        public override void RegisterDonors()
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             connection.Open();
@@ -92,7 +93,17 @@ namespace BloodBankApp_FinalProject_
             
 
         }
-       
+
+        public override void RegisterPatients()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
+            connection.Open();
+            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
+            SDA.SelectCommand.ExecuteNonQuery();
+            connection.Close();
+
+        }
+
     }
     
 }

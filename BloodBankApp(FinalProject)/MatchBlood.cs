@@ -15,6 +15,10 @@ namespace BloodBankApp_FinalProject_
         public MatchBlood()
         {
             InitializeComponent();
+            this.matchBloodToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchBloodToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.matchBloodToolStripMenuItem.BackColor = Color.Crimson;
+
         }
 
         private void registerToolStripMenuItem_Click(object sender, EventArgs e)

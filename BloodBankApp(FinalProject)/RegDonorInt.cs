@@ -8,6 +8,7 @@ namespace BloodBankApp_FinalProject_
 {
     interface RegDonorInt
     {
+      
         void RegisterDonor();
     }
 }
