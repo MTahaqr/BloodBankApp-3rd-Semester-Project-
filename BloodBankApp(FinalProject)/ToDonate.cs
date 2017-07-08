@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
@@ -82,6 +83,17 @@ namespace BloodBankApp_FinalProject_
             // TODO: This line of code loads data into the 'registerDBDataSet6.RDBTable' table. You can move, or remove it, as needed.
             this.rDBTableTableAdapter.Fill(this.registerDBDataSet6.RDBTable);
 
+            ToDonateData ToDonateDataObj = new ToDonateData();
+            SqlDataAdapter sda = ToDonateDataObj.RemDonors();
+            DataTable loginTable1 = new DataTable();
+            sda.Fill(loginTable1);
+            metroGrid1.DataSource = loginTable1;
+            SqlDataAdapter sda1 = ToDonateDataObj.RemPatients();
+            DataTable loginTable2 = new DataTable();
+            sda1.Fill(loginTable2);
+            metroGrid2.DataSource = loginTable2;
+
+
         }
 
         private void metroButton1_Click(object sender, EventArgs e)
@@ -92,11 +104,13 @@ namespace BloodBankApp_FinalProject_
             string patientid = metroGrid2.SelectedRows[0].Cells[0].Value.ToString();
             string pDonated = metroGrid2.SelectedRows[0].Cells[6].Value.ToString();
             string dDonated = metroGrid1.SelectedRows[0].Cells[6].Value.ToString();
-            
+            MessageBox.Show(donorId);
 
+            
+    
             if (pDonated == "No"  )
             {
-                if (pDonated == "No")
+                if (dDonated == "No")
                 {
                     ToDonateData ToDonateDataObj = new ToDonateData(donorId, donorBloodGroup, patientid, patientBloodGroup);
                     bool Donated = ToDonateDataObj.ToDonateBlood();
@@ -113,13 +127,13 @@ namespace BloodBankApp_FinalProject_
                 }
                 else
                 {
-                    MetroFramework.MetroMessageBox.Show(this, "Sorry, Blood already Donated", "Donation Incomplete", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                    MetroFramework.MetroMessageBox.Show(this, "Sorry, Donors Blood Is Already Donated", "Donation Incomplete", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
 
                 }
             }
             else
             {
-                MetroFramework.MetroMessageBox.Show(this, "Sorry, Blood already Donated", "Donation Incomplete", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                MetroFramework.MetroMessageBox.Show(this, "Sorry, Blood already Donated to Patient", "Donation Incomplete", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
 
             }
 

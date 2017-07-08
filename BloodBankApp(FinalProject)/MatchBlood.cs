@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
@@ -67,6 +68,64 @@ namespace BloodBankApp_FinalProject_
             ToDonate ToDonateObj = new ToDonate();
             ToDonateObj.Show();
             this.Hide();
+        }
+        string query;
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
+            
+            if (comboBox1.Text == "AB+")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where ABp like '" + "Yes" + "%'";
+
+            }
+            else if(comboBox1.Text == "AB-")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where ABn like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "A+")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Ap like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "A-")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where An like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "B+")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Bp like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "B-")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Bn like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "O+")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Op like '" + "Yes" + "%'";
+
+            }
+            else if (comboBox1.Text == "O-")
+            {
+                query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Onn like '" + "Yes" + "%'";
+
+            }
+            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            DataTable loginTable1 = new DataTable();
+            sda.Fill(loginTable1);
+            metroGrid1.DataSource = loginTable1;
+        }
+
+        private void MatchBlood_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'registerDBDataSet8.RDBTable' table. You can move, or remove it, as needed.
+            this.rDBTableTableAdapter.Fill(this.registerDBDataSet8.RDBTable);
+
         }
     }
 }

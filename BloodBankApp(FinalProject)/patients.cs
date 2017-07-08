@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
@@ -56,9 +57,19 @@ namespace BloodBankApp_FinalProject_
 
         private void patients_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'regPatDBDataSet5.RPDBTable' table. You can move, or remove it, as needed.
+            this.rPDBTableTableAdapter1.Fill(this.regPatDBDataSet5.RPDBTable);
             menuStrip2.Visible = LoginData.checkLoginAs();
             // TODO: This line of code loads data into the 'regPatDBDataSet.RPDBTable' table. You can move, or remove it, as needed.
             this.rPDBTableTableAdapter.Fill(this.regPatDBDataSet.RPDBTable);
+            RegisterData RegisterDataObj = new RegisterData();
+            
+            SqlDataAdapter SDA1 = RegisterDataObj.RefreshPatients();
+            DataTable Data = new DataTable();
+            SDA1.Fill(Data);
+            metroGrid1.DataSource = Data;
+            //connection.Close();
+           
 
         }
 

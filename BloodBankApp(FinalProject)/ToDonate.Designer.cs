@@ -48,20 +48,6 @@
             this.matchBloodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toDonateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
-            this.registerDBDataSet6 = new BloodBankApp_FinalProject_.RegisterDBDataSet6();
-            this.rDBTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rDBTableTableAdapter = new BloodBankApp_FinalProject_.RegisterDBDataSet6TableAdapters.RDBTableTableAdapter();
-            this.regPatDBDataSet3 = new BloodBankApp_FinalProject_.RegPatDBDataSet3();
-            this.rPDBTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.rPDBTableTableAdapter = new BloodBankApp_FinalProject_.RegPatDBDataSet3TableAdapters.RPDBTableTableAdapter();
-            this.registerDBDataSet7 = new BloodBankApp_FinalProject_.RegisterDBDataSet7();
-            this.rDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.rDBTableTableAdapter1 = new BloodBankApp_FinalProject_.RegisterDBDataSet7TableAdapters.RDBTableTableAdapter();
-            this.regPatDBDataSet4 = new BloodBankApp_FinalProject_.RegPatDBDataSet4();
-            this.rPDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.rPDBTableTableAdapter1 = new BloodBankApp_FinalProject_.RegPatDBDataSet4TableAdapters.RPDBTableTableAdapter();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,6 +55,20 @@
             this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.registerAsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Donated = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.registerDBDataSet7 = new BloodBankApp_FinalProject_.RegisterDBDataSet7();
+            this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
+            this.rPDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.regPatDBDataSet4 = new BloodBankApp_FinalProject_.RegPatDBDataSet4();
+            this.registerDBDataSet6 = new BloodBankApp_FinalProject_.RegisterDBDataSet6();
+            this.rDBTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rDBTableTableAdapter = new BloodBankApp_FinalProject_.RegisterDBDataSet6TableAdapters.RDBTableTableAdapter();
+            this.regPatDBDataSet3 = new BloodBankApp_FinalProject_.RegPatDBDataSet3();
+            this.rPDBTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rPDBTableTableAdapter = new BloodBankApp_FinalProject_.RegPatDBDataSet3TableAdapters.RPDBTableTableAdapter();
+            this.rDBTableTableAdapter1 = new BloodBankApp_FinalProject_.RegisterDBDataSet7TableAdapters.RDBTableTableAdapter();
+            this.rPDBTableTableAdapter1 = new BloodBankApp_FinalProject_.RegPatDBDataSet4TableAdapters.RPDBTableTableAdapter();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateofBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,15 +78,15 @@
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip2
@@ -242,6 +242,60 @@
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroGrid1.TabIndex = 43;
             // 
+            // id
+            // 
+            this.id.DataPropertyName = "id";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Visible = false;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            // 
+            // dobDataGridViewTextBoxColumn
+            // 
+            this.dobDataGridViewTextBoxColumn.DataPropertyName = "dob";
+            this.dobDataGridViewTextBoxColumn.HeaderText = "dob";
+            this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
+            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            // 
+            // bloodGroupDataGridViewTextBoxColumn
+            // 
+            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "bloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "bloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
+            // 
+            // registerAsDataGridViewTextBoxColumn
+            // 
+            this.registerAsDataGridViewTextBoxColumn.DataPropertyName = "registerAs";
+            this.registerAsDataGridViewTextBoxColumn.HeaderText = "registerAs";
+            this.registerAsDataGridViewTextBoxColumn.Name = "registerAsDataGridViewTextBoxColumn";
+            // 
+            // Donated
+            // 
+            this.Donated.DataPropertyName = "Donated";
+            this.Donated.HeaderText = "Donated";
+            this.Donated.Name = "Donated";
+            // 
+            // rDBTableBindingSource1
+            // 
+            this.rDBTableBindingSource1.DataMember = "RDBTable";
+            this.rDBTableBindingSource1.DataSource = this.registerDBDataSet7;
+            // 
+            // registerDBDataSet7
+            // 
+            this.registerDBDataSet7.DataSetName = "RegisterDBDataSet7";
+            this.registerDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // metroGrid2
             // 
             this.metroGrid2.AllowUserToResizeRows = false;
@@ -301,6 +355,16 @@
             this.metroGrid2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroGrid2.TabIndex = 44;
             // 
+            // rPDBTableBindingSource1
+            // 
+            this.rPDBTableBindingSource1.DataMember = "RPDBTable";
+            this.rPDBTableBindingSource1.DataSource = this.regPatDBDataSet4;
+            // 
+            // regPatDBDataSet4
+            // 
+            this.regPatDBDataSet4.DataSetName = "RegPatDBDataSet4";
+            this.regPatDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // registerDBDataSet6
             // 
             this.registerDBDataSet6.DataSetName = "RegisterDBDataSet6";
@@ -329,29 +393,9 @@
             // 
             this.rPDBTableTableAdapter.ClearBeforeFill = true;
             // 
-            // registerDBDataSet7
-            // 
-            this.registerDBDataSet7.DataSetName = "RegisterDBDataSet7";
-            this.registerDBDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rDBTableBindingSource1
-            // 
-            this.rDBTableBindingSource1.DataMember = "RDBTable";
-            this.rDBTableBindingSource1.DataSource = this.registerDBDataSet7;
-            // 
             // rDBTableTableAdapter1
             // 
             this.rDBTableTableAdapter1.ClearBeforeFill = true;
-            // 
-            // regPatDBDataSet4
-            // 
-            this.regPatDBDataSet4.DataSetName = "RegPatDBDataSet4";
-            this.regPatDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rPDBTableBindingSource1
-            // 
-            this.rPDBTableBindingSource1.DataMember = "RPDBTable";
-            this.rPDBTableBindingSource1.DataSource = this.regPatDBDataSet4;
             // 
             // rPDBTableTableAdapter1
             // 
@@ -367,55 +411,13 @@
             this.metroButton1.UseSelectable = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // dobDataGridViewTextBoxColumn
-            // 
-            this.dobDataGridViewTextBoxColumn.DataPropertyName = "dob";
-            this.dobDataGridViewTextBoxColumn.HeaderText = "dob";
-            this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // bloodGroupDataGridViewTextBoxColumn
-            // 
-            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "bloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "bloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
-            // 
-            // registerAsDataGridViewTextBoxColumn
-            // 
-            this.registerAsDataGridViewTextBoxColumn.DataPropertyName = "registerAs";
-            this.registerAsDataGridViewTextBoxColumn.HeaderText = "registerAs";
-            this.registerAsDataGridViewTextBoxColumn.Name = "registerAsDataGridViewTextBoxColumn";
-            // 
-            // Donated
-            // 
-            this.Donated.DataPropertyName = "Donated";
-            this.Donated.HeaderText = "Donated";
-            this.Donated.Name = "Donated";
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
             this.dataGridViewTextBoxColumn1.HeaderText = "Id";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
             // 
             // nameDataGridViewTextBoxColumn1
             // 
@@ -468,15 +470,15 @@
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

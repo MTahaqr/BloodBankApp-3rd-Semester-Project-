@@ -156,6 +156,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegisterDBDataSet7.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RegisterDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RegisterPatientData.cs" />
     <Compile Include="RegPatDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -181,6 +191,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RegPatDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegPatDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegPatDBDataSet5.xsd</DependentUpon>
     </Compile>
     <Compile Include="RegPatInt.cs" />
     <Compile Include="Search.cs">
@@ -344,6 +359,28 @@
     <None Include="RegisterDBDataSet7.xss">
       <DependentUpon>RegisterDBDataSet7.xsd</DependentUpon>
     </None>
+    <None Include="RegisterDBDataSet8.xsc">
+      <DependentUpon>RegisterDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet8.xss">
+      <DependentUpon>RegisterDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet9.xsc">
+      <DependentUpon>RegisterDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet9.xss">
+      <DependentUpon>RegisterDBDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="RegPatDBDataSet.xsc">
       <DependentUpon>RegPatDBDataSet.xsd</DependentUpon>
     </None>
@@ -398,6 +435,17 @@
     </None>
     <None Include="RegPatDBDataSet4.xss">
       <DependentUpon>RegPatDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet5.xsc">
+      <DependentUpon>RegPatDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegPatDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegPatDBDataSet5.xss">
+      <DependentUpon>RegPatDBDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Resources\loginPic.jpg" />
   </ItemGroup>

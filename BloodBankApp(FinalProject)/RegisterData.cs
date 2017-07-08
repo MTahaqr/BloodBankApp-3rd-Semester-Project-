@@ -18,6 +18,8 @@ namespace BloodBankApp_FinalProject_
         private string gender;
         private string bloodGroup;
         private string registerAs;
+        private string donated;
+        private string query;
         
         
         public string _name
@@ -65,7 +67,13 @@ namespace BloodBankApp_FinalProject_
             set { registerAs = value; }
             get { return registerAs; }
         }
-        public RegisterData()
+        public string _donated
+        {
+            set { donated = value; }
+            get { return donated; }
+        }
+
+            public RegisterData()
         {
 
         }
@@ -80,6 +88,7 @@ namespace BloodBankApp_FinalProject_
             gender = genderTxt;
             bloodGroup = bloodGroupTxt;
             registerAs = registerAsTxt;
+            donated = "No";
         }
         
         
@@ -87,7 +96,47 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address  + "','" + phoneNo  + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs  + "')", connection);
+            if(bloodGroup == "AB+")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "')";
+
+            }
+            else if(bloodGroup == "AB-")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "A+")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Ap) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "A-")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Ap,An) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "B+")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Bp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "B-")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Bp,Bn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "O+")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Ap,Bp,Op) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            else if (bloodGroup == "O-")
+            {
+                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Ap,An,Bp,Bn,Op,Onn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+
+            }
+            SqlDataAdapter SDA = new SqlDataAdapter(query, connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();
             
@@ -98,10 +147,25 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
+            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs,Donated) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "')", connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();
 
+        }
+        public SqlDataAdapter RefreshPatients()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
+            connection.Open();
+            SqlDataAdapter SDAP = new SqlDataAdapter("Select * from [RPDBTable]", connection);
+            return SDAP;
+        }
+
+        public SqlDataAdapter RefreshDonors()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
+            connection.Open();
+            SqlDataAdapter SDAD = new SqlDataAdapter("Select * from [RDBTable]", connection);
+            return SDAD;
         }
 
     }
