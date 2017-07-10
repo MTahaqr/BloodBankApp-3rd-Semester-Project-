@@ -99,10 +99,14 @@ namespace BloodBankApp_FinalProject_
             string patientid = metroGrid2.SelectedRows[0].Cells[0].Value.ToString();
             string pDonated = metroGrid2.SelectedRows[0].Cells[6].Value.ToString();
             string dDonated = metroGrid1.SelectedRows[0].Cells[6].Value.ToString();
-            MessageBox.Show(donorId);
+            //MessageBox.Show(donorId);
+            //MessageBox.Show(patientid);
+            //MessageBox.Show(dDonated);
+            //MessageBox.Show(pDonated);
 
-            
-    
+
+
+
             if (pDonated == "No"  )
             {
                 if (dDonated == "No")

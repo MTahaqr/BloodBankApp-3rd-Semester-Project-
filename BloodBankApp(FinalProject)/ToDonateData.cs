@@ -49,7 +49,7 @@ namespace BloodBankApp_FinalProject_
             dBloodGroup = dBloodGroupText;
             pId = pIdText;
             pBloodGroup = pBloodGroupText;
-            donated = "Yesss";
+            donated = "Yes";
         }
         public bool ToDonateBlood()
         {

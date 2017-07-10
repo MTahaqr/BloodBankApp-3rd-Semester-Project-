@@ -82,6 +82,7 @@
             this.metroTextBox1.SelectionStart = 0;
             this.metroTextBox1.ShortcutsEnabled = true;
             this.metroTextBox1.Size = new System.Drawing.Size(316, 44);
+            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox1.TabIndex = 0;
             this.metroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -91,14 +92,18 @@
             // 
             // loginBtn
             // 
+            this.loginBtn.BackColor = System.Drawing.Color.Crimson;
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.loginBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(584, 310);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(151, 45);
+            this.loginBtn.Style = MetroFramework.MetroColorStyle.Red;
             this.loginBtn.TabIndex = 4;
             this.loginBtn.Text = "Login";
+            this.loginBtn.UseCustomBackColor = true;
+            this.loginBtn.UseCustomForeColor = true;
             this.loginBtn.UseSelectable = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -132,6 +137,7 @@
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
             this.metroTextBox2.Size = new System.Drawing.Size(316, 44);
+            this.metroTextBox2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox2.TabIndex = 6;
             this.metroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox2.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -141,14 +147,17 @@
             // 
             // exitBtn
             // 
+            this.exitBtn.BackColor = System.Drawing.Color.Crimson;
             this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.exitBtn.ForeColor = System.Drawing.Color.White;
             this.exitBtn.Location = new System.Drawing.Point(821, 310);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(151, 45);
             this.exitBtn.TabIndex = 7;
             this.exitBtn.Text = "Exit";
+            this.exitBtn.UseCustomBackColor = true;
+            this.exitBtn.UseCustomForeColor = true;
             this.exitBtn.UseSelectable = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
@@ -164,8 +173,10 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.Color.White;
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Admin",
@@ -180,7 +191,7 @@
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel3.ForeColor = System.Drawing.Color.DarkRed;
+            this.metroLabel3.ForeColor = System.Drawing.Color.Crimson;
             this.metroLabel3.Location = new System.Drawing.Point(451, 31);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(150, 25);

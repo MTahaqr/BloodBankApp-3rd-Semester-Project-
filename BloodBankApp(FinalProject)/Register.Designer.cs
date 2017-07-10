@@ -174,7 +174,7 @@
             // 
             // 
             this.metroTextBox3.CustomButton.Image = null;
-            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(282, 1);
+            this.metroTextBox3.CustomButton.Location = new System.Drawing.Point(390, 1);
             this.metroTextBox3.CustomButton.Name = "";
             this.metroTextBox3.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBox3.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -196,6 +196,7 @@
             this.metroTextBox3.SelectionStart = 0;
             this.metroTextBox3.ShortcutsEnabled = true;
             this.metroTextBox3.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox3.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox3.TabIndex = 22;
             this.metroTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox3.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -221,7 +222,7 @@
             // 
             // 
             this.metroTextBox2.CustomButton.Image = null;
-            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(282, 1);
+            this.metroTextBox2.CustomButton.Location = new System.Drawing.Point(390, 1);
             this.metroTextBox2.CustomButton.Name = "";
             this.metroTextBox2.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBox2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -243,6 +244,7 @@
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
             this.metroTextBox2.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox2.TabIndex = 20;
             this.metroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox2.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -275,7 +277,7 @@
             // 
             // 
             this.metroTextBox1.CustomButton.Image = null;
-            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(282, 1);
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(390, 1);
             this.metroTextBox1.CustomButton.Name = "";
             this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -297,6 +299,7 @@
             this.metroTextBox1.SelectionStart = 0;
             this.metroTextBox1.ShortcutsEnabled = true;
             this.metroTextBox1.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox1.TabIndex = 17;
             this.metroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -322,7 +325,7 @@
             // 
             // 
             this.metroTextBox4.CustomButton.Image = null;
-            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(282, 1);
+            this.metroTextBox4.CustomButton.Location = new System.Drawing.Point(390, 1);
             this.metroTextBox4.CustomButton.Name = "";
             this.metroTextBox4.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBox4.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -344,6 +347,7 @@
             this.metroTextBox4.SelectionStart = 0;
             this.metroTextBox4.ShortcutsEnabled = true;
             this.metroTextBox4.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox4.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox4.TabIndex = 26;
             this.metroTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox4.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -529,7 +533,7 @@
             // 
             // 
             this.metroTextBox5.CustomButton.Image = null;
-            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(282, 1);
+            this.metroTextBox5.CustomButton.Location = new System.Drawing.Point(390, 1);
             this.metroTextBox5.CustomButton.Name = "";
             this.metroTextBox5.CustomButton.Size = new System.Drawing.Size(33, 33);
             this.metroTextBox5.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -551,6 +555,7 @@
             this.metroTextBox5.SelectionStart = 0;
             this.metroTextBox5.ShortcutsEnabled = true;
             this.metroTextBox5.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox5.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox5.TabIndex = 40;
             this.metroTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox5.Theme = MetroFramework.MetroThemeStyle.Light;

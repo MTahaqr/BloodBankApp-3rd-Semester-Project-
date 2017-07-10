@@ -75,14 +75,18 @@
             // 
             // exitBtn
             // 
+            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.exitBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.exitBtn.ForeColor = System.Drawing.Color.White;
             this.exitBtn.Location = new System.Drawing.Point(382, 314);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(151, 45);
+            this.exitBtn.Style = MetroFramework.MetroColorStyle.Red;
             this.exitBtn.TabIndex = 13;
             this.exitBtn.Text = "Exit";
+            this.exitBtn.UseCustomBackColor = true;
+            this.exitBtn.UseCustomForeColor = true;
             this.exitBtn.UseSelectable = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
@@ -116,6 +120,7 @@
             this.metroTextBox2.SelectionStart = 0;
             this.metroTextBox2.ShortcutsEnabled = true;
             this.metroTextBox2.Size = new System.Drawing.Size(316, 44);
+            this.metroTextBox2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox2.TabIndex = 12;
             this.metroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox2.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -125,14 +130,17 @@
             // 
             // signUpBtn
             // 
+            this.signUpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.signUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.signUpBtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.signUpBtn.ForeColor = System.Drawing.Color.White;
             this.signUpBtn.Location = new System.Drawing.Point(143, 314);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(151, 45);
             this.signUpBtn.TabIndex = 11;
             this.signUpBtn.Text = "SignUp";
+            this.signUpBtn.UseCustomBackColor = true;
+            this.signUpBtn.UseCustomForeColor = true;
             this.signUpBtn.UseSelectable = true;
             this.signUpBtn.Click += new System.EventHandler(this.signUpBtn_Click);
             // 
@@ -166,6 +174,7 @@
             this.metroTextBox1.SelectionStart = 0;
             this.metroTextBox1.ShortcutsEnabled = true;
             this.metroTextBox1.Size = new System.Drawing.Size(316, 44);
+            this.metroTextBox1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox1.TabIndex = 9;
             this.metroTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -203,6 +212,7 @@
             this.metroTextBox3.SelectionStart = 0;
             this.metroTextBox3.ShortcutsEnabled = true;
             this.metroTextBox3.Size = new System.Drawing.Size(316, 44);
+            this.metroTextBox3.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTextBox3.TabIndex = 15;
             this.metroTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox3.Theme = MetroFramework.MetroThemeStyle.Light;

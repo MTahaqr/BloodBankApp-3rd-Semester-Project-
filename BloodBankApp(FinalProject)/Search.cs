@@ -78,7 +78,7 @@ namespace BloodBankApp_FinalProject_
                     sda.Fill(loginTable1);
                     metroGrid1.DataSource = loginTable1;
                 }
-                else if (radioBtn == "patient")
+                else if (radioBtn == "Patient")
                 {
                     SqlDataAdapter sda = SearchDataObj.SearchForDonor();
                     DataTable loginTable1 = new DataTable();

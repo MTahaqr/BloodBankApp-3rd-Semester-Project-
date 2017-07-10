@@ -75,42 +75,42 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             
-            if (comboBox1.Text == "AB+")
+            if (metroComboBox1.Text == "AB+")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where ABp like '" + "Yes" + "%'";
 
             }
-            else if(comboBox1.Text == "AB-")
+            else if(metroComboBox1.Text == "AB-")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where ABn like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "A+")
+            else if (metroComboBox1.Text == "A+")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Ap like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "A-")
+            else if (metroComboBox1.Text == "A-")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where An like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "B+")
+            else if (metroComboBox1.Text == "B+")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Bp like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "B-")
+            else if (metroComboBox1.Text == "B-")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Bn like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "O+")
+            else if (metroComboBox1.Text == "O+")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Op like '" + "Yes" + "%'";
 
             }
-            else if (comboBox1.Text == "O-")
+            else if (metroComboBox1.Text == "O-")
             {
                 query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Onn like '" + "Yes" + "%'";
 

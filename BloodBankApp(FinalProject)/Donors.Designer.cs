@@ -43,6 +43,18 @@
             this.rDBTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rDBTableTableAdapter = new BloodBankApp_FinalProject_.RegisterDBDataSetTableAdapters.RDBTableTableAdapter();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fathersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisteredAs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rDBTableBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
+            this.registerDBDataSet16 = new BloodBankApp_FinalProject_.RegisterDBDataSet16();
             this.rDBTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.registerDBDataSet9 = new BloodBankApp_FinalProject_.RegisterDBDataSet9();
             this.rDBTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
@@ -56,30 +68,20 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchBloodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toDonateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rDBTableTableAdapter3 = new BloodBankApp_FinalProject_.RegisterDBDataSet9TableAdapters.RDBTableTableAdapter();
-            this.changeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerDBDataSet11 = new BloodBankApp_FinalProject_.RegisterDBDataSet11();
             this.rDBTableBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.rDBTableTableAdapter4 = new BloodBankApp_FinalProject_.RegisterDBDataSet11TableAdapters.RDBTableTableAdapter();
-            this.registerDBDataSet16 = new BloodBankApp_FinalProject_.RegisterDBDataSet16();
-            this.rDBTableBindingSource5 = new System.Windows.Forms.BindingSource(this.components);
             this.rDBTableTableAdapter5 = new BloodBankApp_FinalProject_.RegisterDBDataSet16TableAdapters.RDBTableTableAdapter();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fathersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateOfBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RegisteredAs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donatedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource2)).BeginInit();
@@ -89,8 +91,6 @@
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource5)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -196,17 +196,17 @@
             this.donatedDataGridViewTextBoxColumn});
             this.metroGrid1.DataSource = this.rDBTableBindingSource5;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle3;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid1.Location = new System.Drawing.Point(46, 132);
+            this.metroGrid1.Location = new System.Drawing.Point(23, 63);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -230,6 +230,96 @@
             this.metroGrid1.Size = new System.Drawing.Size(1269, 430);
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroGrid1.TabIndex = 2;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // fathersNameDataGridViewTextBoxColumn
+            // 
+            this.fathersNameDataGridViewTextBoxColumn.DataPropertyName = "FathersName";
+            this.fathersNameDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.fathersNameDataGridViewTextBoxColumn.HeaderText = "FathersName";
+            this.fathersNameDataGridViewTextBoxColumn.Name = "fathersNameDataGridViewTextBoxColumn";
+            this.fathersNameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // City
+            // 
+            this.City.DataPropertyName = "City";
+            this.City.DividerWidth = 1;
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            this.City.Width = 120;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // dateOfBirthDataGridViewTextBoxColumn
+            // 
+            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
+            this.dateOfBirthDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            this.genderDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // bloodGroupDataGridViewTextBoxColumn
+            // 
+            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
+            this.bloodGroupDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // RegisteredAs
+            // 
+            this.RegisteredAs.DataPropertyName = "RegisteredAs";
+            this.RegisteredAs.DividerWidth = 1;
+            this.RegisteredAs.HeaderText = "RegisteredAs";
+            this.RegisteredAs.Name = "RegisteredAs";
+            this.RegisteredAs.Width = 120;
+            // 
+            // donatedDataGridViewTextBoxColumn
+            // 
+            this.donatedDataGridViewTextBoxColumn.DataPropertyName = "Donated";
+            this.donatedDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.donatedDataGridViewTextBoxColumn.HeaderText = "Donated";
+            this.donatedDataGridViewTextBoxColumn.Name = "donatedDataGridViewTextBoxColumn";
+            this.donatedDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // rDBTableBindingSource5
+            // 
+            this.rDBTableBindingSource5.DataMember = "RDBTable";
+            this.rDBTableBindingSource5.DataSource = this.registerDBDataSet16;
+            // 
+            // registerDBDataSet16
+            // 
+            this.registerDBDataSet16.DataSetName = "RegisterDBDataSet16";
+            this.registerDBDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rDBTableBindingSource3
             // 
@@ -333,6 +423,17 @@
             this.toolStripMenuItem4.Text = "Donors";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
+            // changeDetailsToolStripMenuItem
+            // 
+            this.changeDetailsToolStripMenuItem.AutoSize = false;
+            this.changeDetailsToolStripMenuItem.CheckOnClick = true;
+            this.changeDetailsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeDetailsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.changeDetailsToolStripMenuItem.Name = "changeDetailsToolStripMenuItem";
+            this.changeDetailsToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
+            this.changeDetailsToolStripMenuItem.Text = "Change Data";
+            this.changeDetailsToolStripMenuItem.Click += new System.EventHandler(this.changeDetailsToolStripMenuItem_Click);
+            // 
             // matchBloodToolStripMenuItem
             // 
             this.matchBloodToolStripMenuItem.AutoSize = false;
@@ -357,17 +458,6 @@
             // 
             this.rDBTableTableAdapter3.ClearBeforeFill = true;
             // 
-            // changeDetailsToolStripMenuItem
-            // 
-            this.changeDetailsToolStripMenuItem.AutoSize = false;
-            this.changeDetailsToolStripMenuItem.CheckOnClick = true;
-            this.changeDetailsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.changeDetailsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
-            this.changeDetailsToolStripMenuItem.Name = "changeDetailsToolStripMenuItem";
-            this.changeDetailsToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
-            this.changeDetailsToolStripMenuItem.Text = "Change Data";
-            this.changeDetailsToolStripMenuItem.Click += new System.EventHandler(this.changeDetailsToolStripMenuItem_Click);
-            // 
             // registerDBDataSet11
             // 
             this.registerDBDataSet11.DataSetName = "RegisterDBDataSet11";
@@ -382,99 +472,9 @@
             // 
             this.rDBTableTableAdapter4.ClearBeforeFill = true;
             // 
-            // registerDBDataSet16
-            // 
-            this.registerDBDataSet16.DataSetName = "RegisterDBDataSet16";
-            this.registerDBDataSet16.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rDBTableBindingSource5
-            // 
-            this.rDBTableBindingSource5.DataMember = "RDBTable";
-            this.rDBTableBindingSource5.DataSource = this.registerDBDataSet16;
-            // 
             // rDBTableTableAdapter5
             // 
             this.rDBTableTableAdapter5.ClearBeforeFill = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // fathersNameDataGridViewTextBoxColumn
-            // 
-            this.fathersNameDataGridViewTextBoxColumn.DataPropertyName = "FathersName";
-            this.fathersNameDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.fathersNameDataGridViewTextBoxColumn.HeaderText = "FathersName";
-            this.fathersNameDataGridViewTextBoxColumn.Name = "fathersNameDataGridViewTextBoxColumn";
-            this.fathersNameDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
-            this.ageDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            this.ageDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // City
-            // 
-            this.City.DataPropertyName = "City";
-            this.City.DividerWidth = 1;
-            this.City.HeaderText = "City";
-            this.City.Name = "City";
-            this.City.Width = 120;
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
-            this.phoneDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            this.phoneDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // dateOfBirthDataGridViewTextBoxColumn
-            // 
-            this.dateOfBirthDataGridViewTextBoxColumn.DataPropertyName = "DateOfBirth";
-            this.dateOfBirthDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.dateOfBirthDataGridViewTextBoxColumn.HeaderText = "DateOfBirth";
-            this.dateOfBirthDataGridViewTextBoxColumn.Name = "dateOfBirthDataGridViewTextBoxColumn";
-            this.dateOfBirthDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
-            this.genderDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            this.genderDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // bloodGroupDataGridViewTextBoxColumn
-            // 
-            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
-            this.bloodGroupDataGridViewTextBoxColumn.Width = 120;
-            // 
-            // RegisteredAs
-            // 
-            this.RegisteredAs.DataPropertyName = "RegisteredAs";
-            this.RegisteredAs.DividerWidth = 1;
-            this.RegisteredAs.HeaderText = "RegisteredAs";
-            this.RegisteredAs.Name = "RegisteredAs";
-            this.RegisteredAs.Width = 120;
-            // 
-            // donatedDataGridViewTextBoxColumn
-            // 
-            this.donatedDataGridViewTextBoxColumn.DataPropertyName = "Donated";
-            this.donatedDataGridViewTextBoxColumn.DividerWidth = 1;
-            this.donatedDataGridViewTextBoxColumn.HeaderText = "Donated";
-            this.donatedDataGridViewTextBoxColumn.Name = "donatedDataGridViewTextBoxColumn";
-            this.donatedDataGridViewTextBoxColumn.Width = 120;
             // 
             // Donors
             // 
@@ -492,6 +492,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource2)).EndInit();
@@ -502,8 +504,6 @@
             this.menuStrip2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource5)).EndInit();
             this.ResumeLayout(false);
 
         }
