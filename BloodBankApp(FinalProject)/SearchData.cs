@@ -69,7 +69,7 @@ namespace BloodBankApp_FinalProject_
                  conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
                 if (searchBy == "Name")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where name like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where name like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                     //DataTable loginTable1 = new DataTable();
                     //sda.Fill(loginTable1);
@@ -77,43 +77,43 @@ namespace BloodBankApp_FinalProject_
                 }
                 else if (searchBy == "Father'sName")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where fathersName like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where fathersName like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
                 else if (searchBy == "Age")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where age like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where age like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
-                else if (searchBy == "Address")
+                else if (searchBy == "City")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where address like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where City like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
                 else if (searchBy == "Phone")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where phone like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where phone like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
                 else if (searchBy == "DateOfBirth")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where dob like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where dob like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
                 else if (searchBy == "Gender")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where gender like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where gender like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
                 else if (searchBy == "BloodGroup")
                 {
-                    string query = " Select name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs from [RDBTable] where bloodGroup like '" + searchFor + "%'";
+                    string query = " Select name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs from [RDBTable] where bloodGroup like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
 
                 }
@@ -123,44 +123,44 @@ namespace BloodBankApp_FinalProject_
                 conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
                 if (searchBy == "Name")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where Name like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where Name like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
 
 
                 else if (searchBy == "Father'sName")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where fathersName like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where fathersName like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
                 else if (searchBy == "Age")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where age like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where age like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
-                else if (searchBy == "Address")
+                else if (searchBy == "City")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where address like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where City like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
                 else if (searchBy == "Phone")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where phone like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where phone like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
                 else if (searchBy == "DateOfBirth")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where dob like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where dob like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
                 else if (searchBy == "Gender")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where gender like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where gender like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
                 else if (searchBy == "BloodGroup")
                 {
-                    string query = " Select Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where bloodGroup like '" + searchFor + "%'";
+                    string query = " Select Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs from [RPDBTable] where bloodGroup like '" + searchFor + "%'";
                     sda = new SqlDataAdapter(query, conn);
                 }
             }

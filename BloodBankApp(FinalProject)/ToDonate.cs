@@ -74,14 +74,9 @@ namespace BloodBankApp_FinalProject_
 
         private void ToDonate_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'regPatDBDataSet4.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter1.Fill(this.regPatDBDataSet4.RPDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet7.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter1.Fill(this.registerDBDataSet7.RDBTable);
-            // TODO: This line of code loads data into the 'regPatDBDataSet3.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter.Fill(this.regPatDBDataSet3.RPDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet6.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter.Fill(this.registerDBDataSet6.RDBTable);
+            // TODO: This line of code loads data into the 'registerDBDataSet19.RDBTable' table. You can move, or remove it, as needed.
+            this.rDBTableTableAdapter3.Fill(this.registerDBDataSet19.RDBTable);
+
 
             ToDonateData ToDonateDataObj = new ToDonateData();
             SqlDataAdapter sda = ToDonateDataObj.RemDonors();

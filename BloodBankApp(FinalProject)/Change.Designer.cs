@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,16 +51,6 @@
             this.metroRadioButton2 = new MetroFramework.Controls.MetroRadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fathersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dobDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.registerAsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rDBTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.registerDBDataSet5 = new BloodBankApp_FinalProject_.RegisterDBDataSet5();
             this.rDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -76,22 +66,41 @@
             this.rPDBTableTableAdapter = new BloodBankApp_FinalProject_.RegPatDBDataSet1TableAdapters.RPDBTableTableAdapter();
             this.rDBTableTableAdapter2 = new BloodBankApp_FinalProject_.RegisterDBDataSet5TableAdapters.RDBTableTableAdapter();
             this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateofBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.registeredAsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rPDBTableBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.regPatDBDataSet2 = new BloodBankApp_FinalProject_.RegPatDBDataSet2();
             this.rPDBTableTableAdapter1 = new BloodBankApp_FinalProject_.RegPatDBDataSet2TableAdapters.RPDBTableTableAdapter();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
+            this.registerDBDataSet12 = new BloodBankApp_FinalProject_.RegisterDBDataSet12();
+            this.rDBTableBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.rDBTableTableAdapter3 = new BloodBankApp_FinalProject_.RegisterDBDataSet12TableAdapters.RDBTableTableAdapter();
+            this.regPatDBDataSet8 = new BloodBankApp_FinalProject_.RegPatDBDataSet8();
+            this.rPDBTableBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.rPDBTableTableAdapter2 = new BloodBankApp_FinalProject_.RegPatDBDataSet8TableAdapters.RPDBTableTableAdapter();
+            this.registerDBDataSet17 = new BloodBankApp_FinalProject_.RegisterDBDataSet17();
+            this.rDBTableBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.rDBTableTableAdapter4 = new BloodBankApp_FinalProject_.RegisterDBDataSet17TableAdapters.RDBTableTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateofBirthDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.registeredAsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fathersNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateOfBirthDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.genderDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bloodGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RegisteredAs = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
@@ -106,10 +115,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.AutoSize = false;
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registerToolStripMenuItem,
@@ -121,7 +137,7 @@
             this.toDonateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 7);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1219, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1249, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -129,70 +145,70 @@
             // registerToolStripMenuItem
             // 
             this.registerToolStripMenuItem.AutoSize = false;
-            this.registerToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.registerToolStripMenuItem.Text = "Register";
             this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
             // 
             // patientsToolStripMenuItem
             // 
             this.patientsToolStripMenuItem.AutoSize = false;
-            this.patientsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.patientsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.patientsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
-            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.patientsToolStripMenuItem.Text = "Patients";
             this.patientsToolStripMenuItem.Click += new System.EventHandler(this.patientsToolStripMenuItem_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.AutoSize = false;
-            this.searchToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.searchToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
             // viewAllDonorsToolStripMenuItem
             // 
             this.viewAllDonorsToolStripMenuItem.AutoSize = false;
-            this.viewAllDonorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewAllDonorsToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.viewAllDonorsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.viewAllDonorsToolStripMenuItem.Name = "viewAllDonorsToolStripMenuItem";
-            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
-            this.viewAllDonorsToolStripMenuItem.Text = "View All Donors";
+            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
+            this.viewAllDonorsToolStripMenuItem.Text = "Donors";
             this.viewAllDonorsToolStripMenuItem.Click += new System.EventHandler(this.viewAllDonorsToolStripMenuItem_Click);
             // 
             // changeToolStripMenuItem
             // 
             this.changeToolStripMenuItem.AutoSize = false;
-            this.changeToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.changeToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.changeToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.changeToolStripMenuItem.Name = "changeToolStripMenuItem";
-            this.changeToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.changeToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.changeToolStripMenuItem.Text = " Change Data";
             this.changeToolStripMenuItem.Click += new System.EventHandler(this.changedataToolStripMenuItem_Click);
             // 
             // matchBloodToolStripMenuItem
             // 
             this.matchBloodToolStripMenuItem.AutoSize = false;
-            this.matchBloodToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchBloodToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.matchBloodToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.matchBloodToolStripMenuItem.Name = "matchBloodToolStripMenuItem";
-            this.matchBloodToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.matchBloodToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.matchBloodToolStripMenuItem.Text = "Match Blood";
             this.matchBloodToolStripMenuItem.Click += new System.EventHandler(this.matchBloodToolStripMenuItem_Click);
             // 
             // toDonateToolStripMenuItem
             // 
             this.toDonateToolStripMenuItem.AutoSize = false;
-            this.toDonateToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toDonateToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F);
             this.toDonateToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.toDonateToolStripMenuItem.Name = "toDonateToolStripMenuItem";
-            this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(173, 25);
+            this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(177, 35);
             this.toDonateToolStripMenuItem.Text = "To Donate";
             this.toDonateToolStripMenuItem.Click += new System.EventHandler(this.toDonateToolStripMenuItem_Click);
             // 
@@ -230,127 +246,71 @@
             // metroGrid1
             // 
             this.metroGrid1.AllowUserToResizeRows = false;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.metroGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.metroGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.metroGrid1.AutoGenerateColumns = false;
             this.metroGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.metroGrid1.ColumnHeadersHeight = 35;
             this.metroGrid1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
+            this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
             this.fathersNameDataGridViewTextBoxColumn,
             this.ageDataGridViewTextBoxColumn,
-            this.addressDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn5,
             this.phoneDataGridViewTextBoxColumn,
-            this.dobDataGridViewTextBoxColumn,
+            this.dateOfBirthDataGridViewTextBoxColumn1,
             this.genderDataGridViewTextBoxColumn,
             this.bloodGroupDataGridViewTextBoxColumn,
-            this.registerAsDataGridViewTextBoxColumn});
-            this.metroGrid1.DataSource = this.rDBTableBindingSource2;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle13;
+            this.RegisteredAs});
+            this.metroGrid1.DataSource = this.rDBTableBindingSource4;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle3;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(36, 153);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroGrid1.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Red;
+            this.metroGrid1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.metroGrid1.RowTemplate.Height = 40;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid1.Size = new System.Drawing.Size(1183, 320);
+            this.metroGrid1.Size = new System.Drawing.Size(1266, 320);
             this.metroGrid1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroGrid1.TabIndex = 4;
             this.metroGrid1.Visible = false;
             this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
-            // 
-            // id
-            // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
-            // fathersNameDataGridViewTextBoxColumn
-            // 
-            this.fathersNameDataGridViewTextBoxColumn.DataPropertyName = "fathersName";
-            this.fathersNameDataGridViewTextBoxColumn.HeaderText = "fathersName";
-            this.fathersNameDataGridViewTextBoxColumn.Name = "fathersNameDataGridViewTextBoxColumn";
-            // 
-            // ageDataGridViewTextBoxColumn
-            // 
-            this.ageDataGridViewTextBoxColumn.DataPropertyName = "age";
-            this.ageDataGridViewTextBoxColumn.HeaderText = "age";
-            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
-            // 
-            // addressDataGridViewTextBoxColumn
-            // 
-            this.addressDataGridViewTextBoxColumn.DataPropertyName = "address";
-            this.addressDataGridViewTextBoxColumn.HeaderText = "address";
-            this.addressDataGridViewTextBoxColumn.Name = "addressDataGridViewTextBoxColumn";
-            // 
-            // phoneDataGridViewTextBoxColumn
-            // 
-            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
-            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
-            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
-            // 
-            // dobDataGridViewTextBoxColumn
-            // 
-            this.dobDataGridViewTextBoxColumn.DataPropertyName = "dob";
-            this.dobDataGridViewTextBoxColumn.HeaderText = "dob";
-            this.dobDataGridViewTextBoxColumn.Name = "dobDataGridViewTextBoxColumn";
-            // 
-            // genderDataGridViewTextBoxColumn
-            // 
-            this.genderDataGridViewTextBoxColumn.DataPropertyName = "gender";
-            this.genderDataGridViewTextBoxColumn.HeaderText = "gender";
-            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
-            // 
-            // bloodGroupDataGridViewTextBoxColumn
-            // 
-            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "bloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "bloodGroup";
-            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
-            // 
-            // registerAsDataGridViewTextBoxColumn
-            // 
-            this.registerAsDataGridViewTextBoxColumn.DataPropertyName = "registerAs";
-            this.registerAsDataGridViewTextBoxColumn.HeaderText = "registerAs";
-            this.registerAsDataGridViewTextBoxColumn.Name = "registerAsDataGridViewTextBoxColumn";
             // 
             // rDBTableBindingSource2
             // 
@@ -430,126 +390,70 @@
             // metroGrid2
             // 
             this.metroGrid2.AllowUserToResizeRows = false;
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.metroGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.metroGrid2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.metroGrid2.AutoGenerateColumns = false;
             this.metroGrid2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.metroGrid2.ColumnHeadersHeight = 35;
             this.metroGrid2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
+            this.City,
             this.dataGridViewTextBoxColumn6,
             this.dateofBirthDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn7,
             this.dataGridViewTextBoxColumn8,
             this.registeredAsDataGridViewTextBoxColumn});
-            this.metroGrid2.DataSource = this.rPDBTableBindingSource1;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle18;
+            this.metroGrid2.DataSource = this.rPDBTableBindingSource2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle8;
             this.metroGrid2.EnableHeadersVisualStyles = false;
             this.metroGrid2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.metroGrid2.Location = new System.Drawing.Point(23, 153);
+            this.metroGrid2.Location = new System.Drawing.Point(36, 153);
             this.metroGrid2.Name = "metroGrid2";
             this.metroGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(17)))), ((int)(((byte)(65)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(19)))), ((int)(((byte)(73)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.metroGrid2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.metroGrid2.RowsDefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Red;
+            this.metroGrid2.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.metroGrid2.RowTemplate.Height = 40;
             this.metroGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.metroGrid2.Size = new System.Drawing.Size(1252, 367);
+            this.metroGrid2.Size = new System.Drawing.Size(1266, 367);
             this.metroGrid2.Style = MetroFramework.MetroColorStyle.Red;
             this.metroGrid2.TabIndex = 6;
             this.metroGrid2.Visible = false;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "FathersName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "FathersName";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Age";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Age";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Address";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Address";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Phone";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Phone";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dateofBirthDataGridViewTextBoxColumn
-            // 
-            this.dateofBirthDataGridViewTextBoxColumn.DataPropertyName = "DateofBirth";
-            this.dateofBirthDataGridViewTextBoxColumn.HeaderText = "DateofBirth";
-            this.dateofBirthDataGridViewTextBoxColumn.Name = "dateofBirthDataGridViewTextBoxColumn";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Gender";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Gender";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "BloodGroup";
-            this.dataGridViewTextBoxColumn8.HeaderText = "BloodGroup";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // registeredAsDataGridViewTextBoxColumn
-            // 
-            this.registeredAsDataGridViewTextBoxColumn.DataPropertyName = "RegisteredAs";
-            this.registeredAsDataGridViewTextBoxColumn.HeaderText = "RegisteredAs";
-            this.registeredAsDataGridViewTextBoxColumn.Name = "registeredAsDataGridViewTextBoxColumn";
             // 
             // rPDBTableBindingSource1
             // 
@@ -598,11 +502,215 @@
             this.metroButton5.Visible = false;
             this.metroButton5.Click += new System.EventHandler(this.metroButton5_Click);
             // 
+            // registerDBDataSet12
+            // 
+            this.registerDBDataSet12.DataSetName = "RegisterDBDataSet12";
+            this.registerDBDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rDBTableBindingSource3
+            // 
+            this.rDBTableBindingSource3.DataMember = "RDBTable";
+            this.rDBTableBindingSource3.DataSource = this.registerDBDataSet12;
+            // 
+            // rDBTableTableAdapter3
+            // 
+            this.rDBTableTableAdapter3.ClearBeforeFill = true;
+            // 
+            // regPatDBDataSet8
+            // 
+            this.regPatDBDataSet8.DataSetName = "RegPatDBDataSet8";
+            this.regPatDBDataSet8.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rPDBTableBindingSource2
+            // 
+            this.rPDBTableBindingSource2.DataMember = "RPDBTable";
+            this.rPDBTableBindingSource2.DataSource = this.regPatDBDataSet8;
+            // 
+            // rPDBTableTableAdapter2
+            // 
+            this.rPDBTableTableAdapter2.ClearBeforeFill = true;
+            // 
+            // registerDBDataSet17
+            // 
+            this.registerDBDataSet17.DataSetName = "RegisterDBDataSet17";
+            this.registerDBDataSet17.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // rDBTableBindingSource4
+            // 
+            this.rDBTableBindingSource4.DataMember = "RDBTable";
+            this.rDBTableBindingSource4.DataSource = this.registerDBDataSet17;
+            // 
+            // rDBTableTableAdapter4
+            // 
+            this.rDBTableTableAdapter4.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "FathersName";
+            this.dataGridViewTextBoxColumn3.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn3.HeaderText = "FathersName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Age";
+            this.dataGridViewTextBoxColumn4.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.Width = 110;
+            // 
+            // City
+            // 
+            this.City.DataPropertyName = "City";
+            this.City.DividerWidth = 1;
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            this.City.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn6.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Phone";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.Width = 120;
+            // 
+            // dateofBirthDataGridViewTextBoxColumn
+            // 
+            this.dateofBirthDataGridViewTextBoxColumn.DataPropertyName = "DateofBirth";
+            this.dateofBirthDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.dateofBirthDataGridViewTextBoxColumn.HeaderText = "DateofBirth";
+            this.dateofBirthDataGridViewTextBoxColumn.Name = "dateofBirthDataGridViewTextBoxColumn";
+            this.dateofBirthDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Gender";
+            this.dataGridViewTextBoxColumn7.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Gender";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 120;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "BloodGroup";
+            this.dataGridViewTextBoxColumn8.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn8.HeaderText = "BloodGroup";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Width = 120;
+            // 
+            // registeredAsDataGridViewTextBoxColumn
+            // 
+            this.registeredAsDataGridViewTextBoxColumn.DataPropertyName = "RegisteredAs";
+            this.registeredAsDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.registeredAsDataGridViewTextBoxColumn.HeaderText = "RegisteredAs";
+            this.registeredAsDataGridViewTextBoxColumn.Name = "registeredAsDataGridViewTextBoxColumn";
+            this.registeredAsDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // fathersNameDataGridViewTextBoxColumn
+            // 
+            this.fathersNameDataGridViewTextBoxColumn.DataPropertyName = "FathersName";
+            this.fathersNameDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.fathersNameDataGridViewTextBoxColumn.HeaderText = "FathersName";
+            this.fathersNameDataGridViewTextBoxColumn.Name = "fathersNameDataGridViewTextBoxColumn";
+            this.fathersNameDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // ageDataGridViewTextBoxColumn
+            // 
+            this.ageDataGridViewTextBoxColumn.DataPropertyName = "Age";
+            this.ageDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.ageDataGridViewTextBoxColumn.HeaderText = "Age";
+            this.ageDataGridViewTextBoxColumn.Name = "ageDataGridViewTextBoxColumn";
+            this.ageDataGridViewTextBoxColumn.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "City";
+            this.dataGridViewTextBoxColumn5.DividerWidth = 1;
+            this.dataGridViewTextBoxColumn5.HeaderText = "City";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.Width = 120;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "Phone";
+            this.phoneDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "Phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
+            this.phoneDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // dateOfBirthDataGridViewTextBoxColumn1
+            // 
+            this.dateOfBirthDataGridViewTextBoxColumn1.DataPropertyName = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn1.DividerWidth = 1;
+            this.dateOfBirthDataGridViewTextBoxColumn1.HeaderText = "DateOfBirth";
+            this.dateOfBirthDataGridViewTextBoxColumn1.Name = "dateOfBirthDataGridViewTextBoxColumn1";
+            this.dateOfBirthDataGridViewTextBoxColumn1.Width = 120;
+            // 
+            // genderDataGridViewTextBoxColumn
+            // 
+            this.genderDataGridViewTextBoxColumn.DataPropertyName = "Gender";
+            this.genderDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.genderDataGridViewTextBoxColumn.HeaderText = "Gender";
+            this.genderDataGridViewTextBoxColumn.Name = "genderDataGridViewTextBoxColumn";
+            this.genderDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // bloodGroupDataGridViewTextBoxColumn
+            // 
+            this.bloodGroupDataGridViewTextBoxColumn.DataPropertyName = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.DividerWidth = 1;
+            this.bloodGroupDataGridViewTextBoxColumn.HeaderText = "BloodGroup";
+            this.bloodGroupDataGridViewTextBoxColumn.Name = "bloodGroupDataGridViewTextBoxColumn";
+            this.bloodGroupDataGridViewTextBoxColumn.Width = 120;
+            // 
+            // RegisteredAs
+            // 
+            this.RegisteredAs.DataPropertyName = "RegisteredAs";
+            this.RegisteredAs.DividerWidth = 1;
+            this.RegisteredAs.HeaderText = "RegisteredAs";
+            this.RegisteredAs.Name = "RegisteredAs";
+            this.RegisteredAs.Width = 130;
+            // 
             // Change
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 614);
+            this.ClientSize = new System.Drawing.Size(1325, 614);
             this.Controls.Add(this.metroButton5);
             this.Controls.Add(this.metroButton4);
             this.Controls.Add(this.metroButton3);
@@ -631,8 +739,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.regPatDBDataSet8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rPDBTableBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.registerDBDataSet17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rDBTableBindingSource4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -664,32 +777,41 @@
         private RegisterDBDataSet5 registerDBDataSet5;
         private System.Windows.Forms.BindingSource rDBTableBindingSource2;
         private RegisterDBDataSet5TableAdapters.RDBTableTableAdapter rDBTableTableAdapter2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fathersNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addressDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dobDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bloodGroupDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn registerAsDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroGrid metroGrid2;
         private RegPatDBDataSet2 regPatDBDataSet2;
         private System.Windows.Forms.BindingSource rPDBTableBindingSource1;
         private RegPatDBDataSet2TableAdapters.RPDBTableTableAdapter rPDBTableTableAdapter1;
+        private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroButton metroButton4;
+        private MetroFramework.Controls.MetroButton metroButton5;
+        private RegisterDBDataSet12 registerDBDataSet12;
+        private System.Windows.Forms.BindingSource rDBTableBindingSource3;
+        private RegisterDBDataSet12TableAdapters.RDBTableTableAdapter rDBTableTableAdapter3;
+        private RegPatDBDataSet8 regPatDBDataSet8;
+        private System.Windows.Forms.BindingSource rPDBTableBindingSource2;
+        private RegPatDBDataSet8TableAdapters.RPDBTableTableAdapter rPDBTableTableAdapter2;
+        private RegisterDBDataSet17 registerDBDataSet17;
+        private System.Windows.Forms.BindingSource rDBTableBindingSource4;
+        private RegisterDBDataSet17TableAdapters.RDBTableTableAdapter rDBTableTableAdapter4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fathersNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateOfBirthDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn genderDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn bloodGroupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RegisteredAs;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn City;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dateofBirthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn registeredAsDataGridViewTextBoxColumn;
-        private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroButton metroButton4;
-        private MetroFramework.Controls.MetroButton metroButton5;
     }
 }

@@ -126,6 +126,56 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegisterDBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RegisterDBDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterDBDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegisterDBDataSet19.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RegisterDBDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -196,6 +246,21 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RegPatDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegPatDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegPatDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegPatDBDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegPatDBDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RegPatDBDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegPatDBDataSet8.xsd</DependentUpon>
     </Compile>
     <Compile Include="RegPatInt.cs" />
     <Compile Include="Search.cs">
@@ -292,6 +357,116 @@
     </None>
     <None Include="RegisterDBDataSet1.xss">
       <DependentUpon>RegisterDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet10.xsc">
+      <DependentUpon>RegisterDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet10.xss">
+      <DependentUpon>RegisterDBDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet11.xsc">
+      <DependentUpon>RegisterDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet11.xss">
+      <DependentUpon>RegisterDBDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet12.xsc">
+      <DependentUpon>RegisterDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet12.xss">
+      <DependentUpon>RegisterDBDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet13.xsc">
+      <DependentUpon>RegisterDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet13.xss">
+      <DependentUpon>RegisterDBDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet14.xsc">
+      <DependentUpon>RegisterDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet14.xss">
+      <DependentUpon>RegisterDBDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet15.xsc">
+      <DependentUpon>RegisterDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet15.xss">
+      <DependentUpon>RegisterDBDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet16.xsc">
+      <DependentUpon>RegisterDBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet16.xss">
+      <DependentUpon>RegisterDBDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet17.xsc">
+      <DependentUpon>RegisterDBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet17.xss">
+      <DependentUpon>RegisterDBDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet18.xsc">
+      <DependentUpon>RegisterDBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet18.xss">
+      <DependentUpon>RegisterDBDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet19.xsc">
+      <DependentUpon>RegisterDBDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="RegisterDBDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegisterDBDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegisterDBDataSet19.xss">
+      <DependentUpon>RegisterDBDataSet19.xsd</DependentUpon>
     </None>
     <None Include="RegisterDBDataSet2.xsc">
       <DependentUpon>RegisterDBDataSet2.xsd</DependentUpon>
@@ -446,6 +621,39 @@
     </None>
     <None Include="RegPatDBDataSet5.xss">
       <DependentUpon>RegPatDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet6.xsc">
+      <DependentUpon>RegPatDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegPatDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegPatDBDataSet6.xss">
+      <DependentUpon>RegPatDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet7.xsc">
+      <DependentUpon>RegPatDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegPatDBDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegPatDBDataSet7.xss">
+      <DependentUpon>RegPatDBDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet8.xsc">
+      <DependentUpon>RegPatDBDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegPatDBDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegPatDBDataSet8.xss">
+      <DependentUpon>RegPatDBDataSet8.xsd</DependentUpon>
     </None>
     <None Include="Resources\loginPic.jpg" />
   </ItemGroup>

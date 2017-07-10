@@ -26,15 +26,10 @@ namespace BloodBankApp_FinalProject_
 
         private void Donors_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'registerDBDataSet9.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter3.Fill(this.registerDBDataSet9.RDBTable);
+            // TODO: This line of code loads data into the 'registerDBDataSet16.RDBTable' table. You can move, or remove it, as needed.
+            this.rDBTableTableAdapter5.Fill(this.registerDBDataSet16.RDBTable);
             menuStrip2.Visible = LoginData.checkLoginAs();
-            // TODO: This line of code loads data into the 'registerDBDataSet2.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter2.Fill(this.registerDBDataSet2.RDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet1.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter1.Fill(this.registerDBDataSet1.RDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter.Fill(this.registerDBDataSet.RDBTable);
+
             RegisterData RegisterDataObj = new RegisterData();
 
             SqlDataAdapter SDAD = RegisterDataObj.RefreshDonors();

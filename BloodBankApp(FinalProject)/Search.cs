@@ -27,6 +27,10 @@ namespace BloodBankApp_FinalProject_
 
         private void Search_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'registerDBDataSet15.RDBTable' table. You can move, or remove it, as needed.
+            this.rDBTableTableAdapter1.Fill(this.registerDBDataSet15.RDBTable);
+            // TODO: This line of code loads data into the 'registerDBDataSet10.RDBTable' table. You can move, or remove it, as needed.
+            //this.rDBTableTableAdapter.Fill(this.registerDBDataSet10.RDBTable);
             menuStrip2.Visible = LoginData.checkLoginAs();
         }
         string radioBtn;
@@ -59,22 +63,36 @@ namespace BloodBankApp_FinalProject_
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            
-            SearchData SearchDataObj = new SearchData(radioBtn,metroComboBox1.Text ,metroTextBox1.Text );
-            if (radioBtn == "Donor")
+            if (metroTextBox1.Text == " " || metroComboBox1.Text == "")
             {
-                    SqlDataAdapter sda = SearchDataObj.SearchForDonor();
-                    DataTable loginTable1 = new DataTable();
-                    sda.Fill(loginTable1);
-                    metroGrid1.DataSource = loginTable1;
+                MetroFramework.MetroMessageBox.Show(this, "Please Complete All The Fields ?", "Searching Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
             else
             {
+                SearchData SearchDataObj = new SearchData(radioBtn, metroComboBox1.Text, metroTextBox1.Text);
+                if (radioBtn == "Donor")
+                {
                     SqlDataAdapter sda = SearchDataObj.SearchForDonor();
                     DataTable loginTable1 = new DataTable();
                     sda.Fill(loginTable1);
                     metroGrid1.DataSource = loginTable1;
+                }
+                else if (radioBtn == "patient")
+                {
+                    SqlDataAdapter sda = SearchDataObj.SearchForDonor();
+                    DataTable loginTable1 = new DataTable();
+                    sda.Fill(loginTable1);
+                    metroGrid1.DataSource = loginTable1;
+                }
+                else
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Please Select Donor or Patient ?", "Searching Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
             }
+
+           
         }
 
         private void metroRadioButton1_CheckedChanged(object sender, EventArgs e)

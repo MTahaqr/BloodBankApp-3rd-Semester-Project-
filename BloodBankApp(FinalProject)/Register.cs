@@ -96,23 +96,41 @@ namespace BloodBankApp_FinalProject_
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            if (radioBtn2 == "Donor")
+            
+            
+
+            if (metroTextBox1.Text == "" || metroTextBox2.Text == "" || metroTextBox3.Text == "" || metroTextBox4.Text == "" || metroTextBox5.Text == "" || dateTimePicker1.Text == "" || radioBtn1 == "" || comboBox1.Text == "" || radioBtn2 == "")
             {
-                RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
-                RegisterDataObj.RegisterDonors();
-                MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MetroFramework.MetroMessageBox.Show(this, "Please Complete All The Fields", "Registration InComplete", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
-                RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
-                RegisterDataObj.RegisterPatients();
-                MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (radioBtn2 == "Donor")
+                {
+                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
+                    RegisterDataObj.RegisterDonors();
+                    MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if(radioBtn2 == "Patient")
+                {
+                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
+                    RegisterDataObj.RegisterPatients();
+                    MetroFramework.MetroMessageBox.Show(this, "Patients Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                //RegisterPatientData RegisterPatientDataObj = new RegisterPatientData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
-                //RegisterPatientDataObj.RegisterPatient();
-                //MetroFramework.MetroMessageBox.Show(this, " Registered"  +radioBtn2  + "SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //RegisterPatientData RegisterPatientDataObj = new RegisterPatientData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
+                    //RegisterPatientDataObj.RegisterPatient();
+                    //MetroFramework.MetroMessageBox.Show(this, " Registered"  +radioBtn2  + "SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                }
+                else
+                {
+                    MetroFramework.MetroMessageBox.Show(this, "Please Complete All The Fields", "Registration Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
             }
+                
+            
+            
 
         }
 

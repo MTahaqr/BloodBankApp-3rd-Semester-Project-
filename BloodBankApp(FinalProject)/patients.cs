@@ -57,11 +57,11 @@ namespace BloodBankApp_FinalProject_
 
         private void patients_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'regPatDBDataSet5.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter1.Fill(this.regPatDBDataSet5.RPDBTable);
+            // TODO: This line of code loads data into the 'regPatDBDataSet7.RPDBTable' table. You can move, or remove it, as needed.
+            this.rPDBTableTableAdapter3.Fill(this.regPatDBDataSet7.RPDBTable);
+
             menuStrip2.Visible = LoginData.checkLoginAs();
-            // TODO: This line of code loads data into the 'regPatDBDataSet.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter.Fill(this.regPatDBDataSet.RPDBTable);
+            
             RegisterData RegisterDataObj = new RegisterData();
             
             SqlDataAdapter SDA1 = RegisterDataObj.RefreshPatients();
@@ -120,6 +120,16 @@ namespace BloodBankApp_FinalProject_
             patients patientsObj = new patients();
             patientsObj.Show();
             this.Hide();
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

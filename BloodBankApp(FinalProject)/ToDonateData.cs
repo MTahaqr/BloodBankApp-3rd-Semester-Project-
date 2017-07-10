@@ -245,7 +245,7 @@ namespace BloodBankApp_FinalProject_
         public SqlDataAdapter RemDonors()
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
-            string query = " Select Id,name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated from [RDBTable] where Donated like '" + "No" + "%'";
+            string query = " Select Id,name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated from [RDBTable] where Donated like '" + "No" + "%'";
             SqlDataAdapter sda1 = new SqlDataAdapter(query, conn);
             return sda1;
         }
@@ -253,7 +253,7 @@ namespace BloodBankApp_FinalProject_
         public SqlDataAdapter RemPatients()
         {
             SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
-            string query = " Select Id,Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs,Donated from [RPDBTable] where Donated like '" + "No" + "%'";
+            string query = " Select Id,Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs,Donated from [RPDBTable] where Donated like '" + "No" + "%'";
             SqlDataAdapter sda2 = new SqlDataAdapter(query, conn);
             return sda2;
         }

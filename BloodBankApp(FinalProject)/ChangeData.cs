@@ -104,7 +104,7 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("update [RDBTable] set name='" + name + "',fathersName='" + fathersName + "' ,age='" + age + "' ,address='" + address + "' ,phone='" + phoneNo + "' ,dob='" + dob + "' ,gender='" + gender + "' ,bloodGroup='" + bloodGroup + "'  where id='" + id + "'", connection);
+            SqlDataAdapter SDA = new SqlDataAdapter("update [RDBTable] set name='" + name + "',fathersName='" + fathersName + "' ,age='" + age + "' ,City='" + address + "' ,phone='" + phoneNo + "' ,DateOfBirth='" + dob + "' ,gender='" + gender + "' ,bloodGroup='" + bloodGroup + "'  where id='" + id + "'", connection);
             //SqlDataAdapter SDA = new SqlDataAdapter("update [DBB1Table] set Name='" + textBox2.Text + "', Age='" + textBox3.Text + "'where Id='" + textBox1.Text + "'", connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();
@@ -127,7 +127,7 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf; Integrated Security = True");
             connection.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("update [RPDBTable] set name='" + name + "',fathersName='" + fathersName + "' ,age='" + age + "' ,address='" + address + "' ,phone='" + phoneNo + "' ,DateOfBirth='" + dob + "' ,gender='" + gender + "' ,bloodGroup='" + bloodGroup + "'  where id='" + id + "'", connection);
+            SqlDataAdapter SDA = new SqlDataAdapter("update [RPDBTable] set name='" + name + "',fathersName='" + fathersName + "' ,age='" + age + "' ,City='" + address + "' ,phone='" + phoneNo + "' ,DateOfBirth='" + dob + "' ,gender='" + gender + "' ,bloodGroup='" + bloodGroup + "'  where id='" + id + "'", connection);
             //SqlDataAdapter SDA = new SqlDataAdapter("update [DBB1Table] set Name='" + textBox2.Text + "', Age='" + textBox3.Text + "'where Id='" + textBox1.Text + "'", connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();

@@ -98,42 +98,42 @@ namespace BloodBankApp_FinalProject_
             connection.Open();
             if(bloodGroup == "AB+")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "')";
 
             }
             else if(bloodGroup == "AB-")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,ABn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "A+")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Ap) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,Ap) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "A-")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Ap,An) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,ABn,Ap,An) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "B+")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Bp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,Bp) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "B-")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Bp,Bn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,ABn,Bp,Bn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "O+")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,Ap,Bp,Op) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,Ap,Bp,Op) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             else if (bloodGroup == "O-")
             {
-                query = "insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs,Donated,ABp,ABn,Ap,An,Bp,Bn,Op,Onn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
+                query = "insert into [RDBTable] (name,fathersName,age,City,phone,DateOfBirth,gender,bloodGroup,registeredAs,Donated,ABp,ABn,Ap,An,Bp,Bn,Op,Onn) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "','" + "Yes" + "')";
 
             }
             SqlDataAdapter SDA = new SqlDataAdapter(query, connection);
@@ -147,7 +147,7 @@ namespace BloodBankApp_FinalProject_
         {
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs,Donated) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "')", connection);
+            SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,City,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs,Donated) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "','" + donated + "')", connection);
             SDA.SelectCommand.ExecuteNonQuery();
             connection.Close();
 

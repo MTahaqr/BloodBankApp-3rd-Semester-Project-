@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RegisterDBDataSet19" targetNamespace="http://tempuri.org/RegisterDBDataSet19.xsd" xmlns:mstns="http://tempuri.org/RegisterDBDataSet19.xsd" xmlns="http://tempuri.org/RegisterDBDataSet19.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RegisterDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RegisterDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BloodBankApp_FinalProject_.Properties.Settings.GlobalReference.Default.RegisterDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RDBTableTableAdapter" GeneratorDataComponentClassName="RDBTableTableAdapter" Name="RDBTable" UserDataComponentName="RDBTableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RegisterDBConnectionString (Settings)" DbObjectName="dbo.RDBTable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, DateOfBirth, Gender, BloodGroup, RegisteredAs, Donated FROM dbo.RDBTable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="DateOfBirth" DataSetColumn="DateOfBirth" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="BloodGroup" DataSetColumn="BloodGroup" />
+              <Mapping SourceColumn="RegisteredAs" DataSetColumn="RegisteredAs" />
+              <Mapping SourceColumn="Donated" DataSetColumn="Donated" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RegisterDBDataSet19" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="RegisterDBDataSet19" msprop:Generator_UserDSName="RegisterDBDataSet19">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RDBTable" msprop:Generator_TableClassName="RDBTableDataTable" msprop:Generator_TableVarName="tableRDBTable" msprop:Generator_TablePropName="RDBTable" msprop:Generator_RowDeletingName="RDBTableRowDeleting" msprop:Generator_RowChangingName="RDBTableRowChanging" msprop:Generator_RowEvHandlerName="RDBTableRowChangeEventHandler" msprop:Generator_RowDeletedName="RDBTableRowDeleted" msprop:Generator_UserTableName="RDBTable" msprop:Generator_RowChangedName="RDBTableRowChanged" msprop:Generator_RowEvArgName="RDBTableRowChangeEvent" msprop:Generator_RowClassName="RDBTableRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateOfBirth" msprop:Generator_ColumnVarNameInTable="columnDateOfBirth" msprop:Generator_ColumnPropNameInRow="DateOfBirth" msprop:Generator_ColumnPropNameInTable="DateOfBirthColumn" msprop:Generator_UserColumnName="DateOfBirth">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BloodGroup" msprop:Generator_ColumnVarNameInTable="columnBloodGroup" msprop:Generator_ColumnPropNameInRow="BloodGroup" msprop:Generator_ColumnPropNameInTable="BloodGroupColumn" msprop:Generator_UserColumnName="BloodGroup">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegisteredAs" msprop:Generator_ColumnVarNameInTable="columnRegisteredAs" msprop:Generator_ColumnPropNameInRow="RegisteredAs" msprop:Generator_ColumnPropNameInTable="RegisteredAsColumn" msprop:Generator_UserColumnName="RegisteredAs">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Donated" msprop:Generator_ColumnVarNameInTable="columnDonated" msprop:Generator_ColumnPropNameInRow="Donated" msprop:Generator_ColumnPropNameInTable="DonatedColumn" msprop:Generator_UserColumnName="Donated" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

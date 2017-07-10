@@ -106,17 +106,10 @@ namespace BloodBankApp_FinalProject_
 
         private void Change_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'regPatDBDataSet2.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter1.Fill(this.regPatDBDataSet2.RPDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet5.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter2.Fill(this.registerDBDataSet5.RDBTable);
-            // TODO: This line of code loads data into the 'regPatDBDataSet1.RPDBTable' table. You can move, or remove it, as needed.
-            this.rPDBTableTableAdapter.Fill(this.regPatDBDataSet1.RPDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet4.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter1.Fill(this.registerDBDataSet4.RDBTable);
-            // TODO: This line of code loads data into the 'registerDBDataSet3.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter.Fill(this.registerDBDataSet3.RDBTable);
-
+            // TODO: This line of code loads data into the 'registerDBDataSet17.RDBTable' table. You can move, or remove it, as needed.
+            this.rDBTableTableAdapter4.Fill(this.registerDBDataSet17.RDBTable);
+            // TODO: This line of code loads data into the 'regPatDBDataSet8.RPDBTable' table. You can move, or remove it, as needed.
+            this.rPDBTableTableAdapter2.Fill(this.regPatDBDataSet8.RPDBTable);
 
         }
 
