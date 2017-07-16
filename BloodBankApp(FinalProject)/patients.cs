@@ -61,7 +61,9 @@ namespace BloodBankApp_FinalProject_
             this.rPDBTableTableAdapter3.Fill(this.regPatDBDataSet7.RPDBTable);
 
             menuStrip2.Visible = LoginData.checkLoginAs();
-            
+            menuStrip1.Visible = !(LoginData.checkLoginAs());
+
+
             RegisterData RegisterDataObj = new RegisterData();
             
             SqlDataAdapter SDA1 = RegisterDataObj.RefreshPatients();
@@ -130,6 +132,20 @@ namespace BloodBankApp_FinalProject_
         private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void matchBloodToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit EditObj = new Edit();
+            EditObj.Show();
+            this.Hide();
         }
     }
 }

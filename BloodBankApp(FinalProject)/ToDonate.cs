@@ -74,19 +74,30 @@ namespace BloodBankApp_FinalProject_
 
         private void ToDonate_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'registerDBDataSet19.RDBTable' table. You can move, or remove it, as needed.
-            this.rDBTableTableAdapter3.Fill(this.registerDBDataSet19.RDBTable);
-
-
             ToDonateData ToDonateDataObj = new ToDonateData();
-            SqlDataAdapter sda = ToDonateDataObj.RemDonors();
+            SqlDataAdapter sda = ToDonateDataObj.RefreshDonors();
             DataTable loginTable1 = new DataTable();
             sda.Fill(loginTable1);
             metroGrid1.DataSource = loginTable1;
-            SqlDataAdapter sda1 = ToDonateDataObj.RemPatients();
+            SqlDataAdapter sda1 = ToDonateDataObj.RefreshPatients();
             DataTable loginTable2 = new DataTable();
             sda1.Fill(loginTable2);
             metroGrid2.DataSource = loginTable2;
+            //// TODO: This line of code loads data into the 'regPatDBDataSet9.RPDBTable' table. You can move, or remove it, as needed.
+            //this.rPDBTableTableAdapter2.Fill(this.regPatDBDataSet9.RPDBTable);
+            //// TODO: This line of code loads data into the 'registerDBDataSet19.RDBTable' table. You can move, or remove it, as needed.
+            //this.rDBTableTableAdapter3.Fill(this.registerDBDataSet19.RDBTable);
+
+
+            //ToDonateData ToDonateDataObj = new ToDonateData();
+            //SqlDataAdapter sda = ToDonateDataObj.RemDonors();
+            //DataTable loginTable1 = new DataTable();
+            //sda.Fill(loginTable1);
+            //metroGrid1.DataSource = loginTable1;
+            //SqlDataAdapter sda1 = ToDonateDataObj.RemPatients();
+            //DataTable loginTable2 = new DataTable();
+            //sda1.Fill(loginTable2);
+            //metroGrid2.DataSource = loginTable2;
 
 
         }
@@ -104,9 +115,6 @@ namespace BloodBankApp_FinalProject_
             //MessageBox.Show(dDonated);
             //MessageBox.Show(pDonated);
 
-
-
-
             if (pDonated == "No"  )
             {
                 if (dDonated == "No")
@@ -115,6 +123,15 @@ namespace BloodBankApp_FinalProject_
                     bool Donated = ToDonateDataObj.ToDonateBlood();
                     if (Donated)
                     {
+                        SqlDataAdapter sda = ToDonateDataObj.RefreshDonors();
+                        DataTable loginTable1 = new DataTable();
+                        sda.Fill(loginTable1);
+                        metroGrid1.DataSource = loginTable1;
+                        SqlDataAdapter sda1 = ToDonateDataObj.RefreshPatients();
+                        DataTable loginTable2 = new DataTable();
+                        sda1.Fill(loginTable2);
+                        metroGrid2.DataSource = loginTable2;
+
                         MetroFramework.MetroMessageBox.Show(this, "Blood Donated Successffully", "Donation Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }

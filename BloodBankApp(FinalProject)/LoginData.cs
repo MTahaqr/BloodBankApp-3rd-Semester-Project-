@@ -10,28 +10,28 @@ namespace BloodBankApp_FinalProject_
     class LoginData
     {
         public static string loginAs;
-        private string email;
+        public static string email;
         private string password;
         //public string _loginAs
         //{
         //    set { loginAs = value; }
         //    get { return loginAs; }
         //}
-        public string _email
-        {
-            set { email = value; }
-            get { return email; }
-        }
+        //public string _email
+        //{
+        //    set { email = value; }
+        //    get { return email; }
+        //}
         public string _password
         {
             set { password = value; }
             get { return password; }
         }
         public LoginData()
-           {
+        {
             
         }
-        public  LoginData(string emailText,string passwordText ,string loginAsText)
+        public LoginData(string emailText,string passwordText ,string loginAsText)
         {
             email = emailText;
             password = passwordText;
@@ -57,11 +57,12 @@ namespace BloodBankApp_FinalProject_
         {
             conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\signUpDB.mdf;Integrated Security=True");
             //string query = " Select count(*) from SUDBTable Where Email = '" + _email + "' and Password = '" + password + "'";
-            string query = " Select count(*) from SUDBTable Where SignUpAs='"+loginAs +"' and Email = '" + _email + "' and Password = '" + password + "'";
+            string query = " Select count(*) from SUDBTable Where SignUpAs='"+loginAs +"' and Email = '" + email + "' and Password = '" + password + "'";
 
             sda = new SqlDataAdapter(query, conn);
             return sda;
         }
+       
 
 
     }

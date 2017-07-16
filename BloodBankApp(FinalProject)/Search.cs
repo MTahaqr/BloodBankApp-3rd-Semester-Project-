@@ -32,6 +32,8 @@ namespace BloodBankApp_FinalProject_
             // TODO: This line of code loads data into the 'registerDBDataSet10.RDBTable' table. You can move, or remove it, as needed.
             //this.rDBTableTableAdapter.Fill(this.registerDBDataSet10.RDBTable);
             menuStrip2.Visible = LoginData.checkLoginAs();
+            menuStrip1.Visible = !(LoginData.checkLoginAs());
+
         }
         string radioBtn;
 
@@ -70,6 +72,7 @@ namespace BloodBankApp_FinalProject_
             }
             else
             {
+                //MessageBox.Show(radioBtn);
                 SearchData SearchDataObj = new SearchData(radioBtn, metroComboBox1.Text, metroTextBox1.Text);
                 if (radioBtn == "Donor")
                 {
@@ -149,6 +152,20 @@ namespace BloodBankApp_FinalProject_
         {
             ToDonate ToDonateObj = new ToDonate();
             ToDonateObj.Show();
+            this.Hide();
+        }
+
+        private void matchBloodToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit EditObj = new Edit();
+            EditObj.Show();
             this.Hide();
         }
     }

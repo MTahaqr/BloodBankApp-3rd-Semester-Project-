@@ -30,12 +30,13 @@
         {
             MetroFramework.Controls.MetroLabel metroLabel3;
             MetroFramework.Controls.MetroLabel metroLabel1;
-            MetroFramework.Controls.MetroLabel metroLabel4;
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.patientsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewAllDonorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.matchBloodToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
@@ -65,20 +66,23 @@
             this.changeDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matchBloodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toDonateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.metroTextBox6 = new MetroFramework.Controls.MetroTextBox();
             metroLabel3 = new MetroFramework.Controls.MetroLabel();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.menuStrip1.SuspendLayout();
             this.metroPanel1.SuspendLayout();
             this.metroPanel2.SuspendLayout();
             this.menuStrip2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel3
             // 
             metroLabel3.AutoSize = true;
             metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            metroLabel3.Location = new System.Drawing.Point(151, 124);
+            metroLabel3.Location = new System.Drawing.Point(145, 136);
             metroLabel3.Name = "metroLabel3";
             metroLabel3.Size = new System.Drawing.Size(57, 19);
             metroLabel3.TabIndex = 23;
@@ -88,21 +92,11 @@
             // 
             metroLabel1.AutoSize = true;
             metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            metroLabel1.Location = new System.Drawing.Point(151, 186);
+            metroLabel1.Location = new System.Drawing.Point(145, 198);
             metroLabel1.Name = "metroLabel1";
             metroLabel1.Size = new System.Drawing.Size(112, 19);
             metroLabel1.TabIndex = 18;
             metroLabel1.Text = "Father\'s Name :";
-            // 
-            // metroLabel4
-            // 
-            metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
-            metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            metroLabel4.Location = new System.Drawing.Point(114, 71);
-            metroLabel4.Name = "metroLabel4";
-            metroLabel4.Size = new System.Drawing.Size(91, 27);
-            metroLabel4.TabIndex = 24;
-            metroLabel4.Text = "Register ";
             // 
             // menuStrip1
             // 
@@ -113,11 +107,13 @@
             this.registerToolStripMenuItem,
             this.patientsToolStripMenuItem,
             this.searchToolStripMenuItem,
-            this.viewAllDonorsToolStripMenuItem});
+            this.viewAllDonorsToolStripMenuItem,
+            this.matchBloodToolStripMenuItem1,
+            this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 7);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 3, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(825, 35);
+            this.menuStrip1.Size = new System.Drawing.Size(834, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -129,7 +125,7 @@
             this.registerToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.registerToolStripMenuItem.Name = "registerToolStripMenuItem";
             this.registerToolStripMenuItem.Padding = new System.Windows.Forms.Padding(65, 0, 117, 0);
-            this.registerToolStripMenuItem.Size = new System.Drawing.Size(203, 35);
+            this.registerToolStripMenuItem.Size = new System.Drawing.Size(137, 35);
             this.registerToolStripMenuItem.Text = "Register";
             this.registerToolStripMenuItem.Click += new System.EventHandler(this.registerToolStripMenuItem_Click);
             // 
@@ -140,7 +136,7 @@
             this.patientsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
             this.patientsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(140, 0, 117, 0);
-            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(203, 35);
+            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(138, 35);
             this.patientsToolStripMenuItem.Text = "Patients";
             this.patientsToolStripMenuItem.Click += new System.EventHandler(this.patientsToolStripMenuItem_Click);
             // 
@@ -151,7 +147,7 @@
             this.searchToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
             this.searchToolStripMenuItem.Padding = new System.Windows.Forms.Padding(115, 0, 117, 0);
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(203, 35);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(137, 35);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
@@ -162,9 +158,29 @@
             this.viewAllDonorsToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.viewAllDonorsToolStripMenuItem.Name = "viewAllDonorsToolStripMenuItem";
             this.viewAllDonorsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(97, 0, 118, 0);
-            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(203, 35);
+            this.viewAllDonorsToolStripMenuItem.Size = new System.Drawing.Size(138, 35);
             this.viewAllDonorsToolStripMenuItem.Text = "Donors";
             this.viewAllDonorsToolStripMenuItem.Click += new System.EventHandler(this.viewAllDonorsToolStripMenuItem_Click);
+            // 
+            // matchBloodToolStripMenuItem1
+            // 
+            this.matchBloodToolStripMenuItem1.AutoSize = false;
+            this.matchBloodToolStripMenuItem1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchBloodToolStripMenuItem1.ForeColor = System.Drawing.Color.Crimson;
+            this.matchBloodToolStripMenuItem1.Name = "matchBloodToolStripMenuItem1";
+            this.matchBloodToolStripMenuItem1.Size = new System.Drawing.Size(137, 35);
+            this.matchBloodToolStripMenuItem1.Text = "Match Blood";
+            this.matchBloodToolStripMenuItem1.Click += new System.EventHandler(this.matchBloodToolStripMenuItem1_Click);
+            // 
+            // editToolStripMenuItem
+            // 
+            this.editToolStripMenuItem.AutoSize = false;
+            this.editToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
+            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(137, 35);
+            this.editToolStripMenuItem.Text = "Edit";
+            this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // metroTextBox3
             // 
@@ -185,7 +201,7 @@
             this.metroTextBox3.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox3.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox3.Lines = new string[0];
-            this.metroTextBox3.Location = new System.Drawing.Point(274, 231);
+            this.metroTextBox3.Location = new System.Drawing.Point(268, 243);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
             this.metroTextBox3.PasswordChar = '\0';
@@ -208,11 +224,11 @@
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel2.Location = new System.Drawing.Point(151, 303);
+            this.metroLabel2.Location = new System.Drawing.Point(145, 315);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(43, 19);
             this.metroLabel2.TabIndex = 21;
-            this.metroLabel2.Text = "Address :";
+            this.metroLabel2.Text = "City :";
             // 
             // metroTextBox2
             // 
@@ -233,7 +249,7 @@
             this.metroTextBox2.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox2.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox2.Lines = new string[0];
-            this.metroTextBox2.Location = new System.Drawing.Point(274, 170);
+            this.metroTextBox2.Location = new System.Drawing.Point(268, 182);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
             this.metroTextBox2.PasswordChar = '\0';
@@ -258,7 +274,7 @@
             this.signUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.signUpBtn.ForeColor = System.Drawing.SystemColors.Window;
-            this.signUpBtn.Location = new System.Drawing.Point(629, 614);
+            this.signUpBtn.Location = new System.Drawing.Point(631, 638);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(151, 45);
             this.signUpBtn.Style = MetroFramework.MetroColorStyle.Red;
@@ -288,7 +304,7 @@
             this.metroTextBox1.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox1.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox1.Lines = new string[0];
-            this.metroTextBox1.Location = new System.Drawing.Point(274, 108);
+            this.metroTextBox1.Location = new System.Drawing.Point(268, 120);
             this.metroTextBox1.MaxLength = 32767;
             this.metroTextBox1.Name = "metroTextBox1";
             this.metroTextBox1.PasswordChar = '\0';
@@ -311,7 +327,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel5.Location = new System.Drawing.Point(148, 362);
+            this.metroLabel5.Location = new System.Drawing.Point(142, 374);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(87, 19);
             this.metroLabel5.TabIndex = 25;
@@ -336,7 +352,7 @@
             this.metroTextBox4.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox4.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox4.Lines = new string[0];
-            this.metroTextBox4.Location = new System.Drawing.Point(274, 287);
+            this.metroTextBox4.Location = new System.Drawing.Point(268, 299);
             this.metroTextBox4.MaxLength = 32767;
             this.metroTextBox4.Name = "metroTextBox4";
             this.metroTextBox4.PasswordChar = '\0';
@@ -358,7 +374,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Location = new System.Drawing.Point(274, 405);
+            this.dateTimePicker1.Location = new System.Drawing.Point(268, 474);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(316, 22);
             this.dateTimePicker1.TabIndex = 27;
@@ -367,7 +383,7 @@
             // 
             this.metroLabel6.AutoSize = true;
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel6.Location = new System.Drawing.Point(151, 408);
+            this.metroLabel6.Location = new System.Drawing.Point(145, 477);
             this.metroLabel6.Name = "metroLabel6";
             this.metroLabel6.Size = new System.Drawing.Size(108, 19);
             this.metroLabel6.TabIndex = 28;
@@ -377,7 +393,7 @@
             // 
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel7.Location = new System.Drawing.Point(151, 464);
+            this.metroLabel7.Location = new System.Drawing.Point(145, 533);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(70, 19);
             this.metroLabel7.TabIndex = 29;
@@ -427,7 +443,7 @@
             "B-",
             "AB+",
             "AB-"});
-            this.comboBox1.Location = new System.Drawing.Point(274, 513);
+            this.comboBox1.Location = new System.Drawing.Point(268, 582);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(316, 22);
             this.comboBox1.TabIndex = 32;
@@ -437,7 +453,7 @@
             // 
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel8.Location = new System.Drawing.Point(148, 513);
+            this.metroLabel8.Location = new System.Drawing.Point(142, 582);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(103, 19);
             this.metroLabel8.TabIndex = 33;
@@ -448,7 +464,7 @@
             // 
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel9.Location = new System.Drawing.Point(151, 566);
+            this.metroLabel9.Location = new System.Drawing.Point(145, 635);
             this.metroLabel9.Name = "metroLabel9";
             this.metroLabel9.Size = new System.Drawing.Size(92, 19);
             this.metroLabel9.TabIndex = 34;
@@ -462,7 +478,7 @@
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(274, 457);
+            this.metroPanel1.Location = new System.Drawing.Point(268, 526);
             this.metroPanel1.Name = "metroPanel1";
             this.metroPanel1.Size = new System.Drawing.Size(201, 26);
             this.metroPanel1.TabIndex = 37;
@@ -477,7 +493,7 @@
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
             this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(274, 559);
+            this.metroPanel2.Location = new System.Drawing.Point(268, 628);
             this.metroPanel2.Name = "metroPanel2";
             this.metroPanel2.Size = new System.Drawing.Size(200, 26);
             this.metroPanel2.TabIndex = 38;
@@ -519,7 +535,7 @@
             // 
             this.metroLabel10.AutoSize = true;
             this.metroLabel10.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel10.Location = new System.Drawing.Point(151, 247);
+            this.metroLabel10.Location = new System.Drawing.Point(145, 259);
             this.metroLabel10.Name = "metroLabel10";
             this.metroLabel10.Size = new System.Drawing.Size(48, 19);
             this.metroLabel10.TabIndex = 39;
@@ -544,7 +560,7 @@
             this.metroTextBox5.FontSize = MetroFramework.MetroTextBoxSize.Tall;
             this.metroTextBox5.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.metroTextBox5.Lines = new string[0];
-            this.metroTextBox5.Location = new System.Drawing.Point(274, 346);
+            this.metroTextBox5.Location = new System.Drawing.Point(268, 358);
             this.metroTextBox5.MaxLength = 32767;
             this.metroTextBox5.Name = "metroTextBox5";
             this.metroTextBox5.PasswordChar = '\0';
@@ -653,15 +669,76 @@
             this.toDonateToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toDonateToolStripMenuItem.ForeColor = System.Drawing.Color.Crimson;
             this.toDonateToolStripMenuItem.Name = "toDonateToolStripMenuItem";
-            this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(140, 35);
+            this.toDonateToolStripMenuItem.Size = new System.Drawing.Size(94, 35);
             this.toDonateToolStripMenuItem.Text = "To Donate";
             this.toDonateToolStripMenuItem.Click += new System.EventHandler(this.toDonateToolStripMenuItem_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BloodBankApp_FinalProject_.Properties.Resources._2;
+            this.pictureBox2.Location = new System.Drawing.Point(256, 45);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(384, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 42;
+            this.pictureBox2.TabStop = false;
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            this.metroLabel4.Location = new System.Drawing.Point(145, 432);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(57, 19);
+            this.metroLabel4.TabIndex = 44;
+            this.metroLabel4.Text = "Email : ";
+            // 
+            // metroTextBox6
+            // 
+            this.metroTextBox6.AllowDrop = true;
+            this.metroTextBox6.BackColor = System.Drawing.Color.White;
+            // 
+            // 
+            // 
+            this.metroTextBox6.CustomButton.Image = null;
+            this.metroTextBox6.CustomButton.Location = new System.Drawing.Point(390, 1);
+            this.metroTextBox6.CustomButton.Name = "";
+            this.metroTextBox6.CustomButton.Size = new System.Drawing.Size(33, 33);
+            this.metroTextBox6.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox6.CustomButton.TabIndex = 1;
+            this.metroTextBox6.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox6.CustomButton.UseSelectable = true;
+            this.metroTextBox6.CustomButton.Visible = false;
+            this.metroTextBox6.FontSize = MetroFramework.MetroTextBoxSize.Tall;
+            this.metroTextBox6.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
+            this.metroTextBox6.Lines = new string[0];
+            this.metroTextBox6.Location = new System.Drawing.Point(268, 416);
+            this.metroTextBox6.MaxLength = 32767;
+            this.metroTextBox6.Name = "metroTextBox6";
+            this.metroTextBox6.PasswordChar = '\0';
+            this.metroTextBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.metroTextBox6.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox6.SelectedText = "";
+            this.metroTextBox6.SelectionLength = 0;
+            this.metroTextBox6.SelectionStart = 0;
+            this.metroTextBox6.ShortcutsEnabled = true;
+            this.metroTextBox6.Size = new System.Drawing.Size(424, 35);
+            this.metroTextBox6.Style = MetroFramework.MetroColorStyle.Red;
+            this.metroTextBox6.TabIndex = 45;
+            this.metroTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.metroTextBox6.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox6.UseSelectable = true;
+            this.metroTextBox6.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox6.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 693);
+            this.Controls.Add(this.metroTextBox6);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.menuStrip2);
             this.Controls.Add(this.metroTextBox5);
             this.Controls.Add(this.metroLabel10);
@@ -675,7 +752,6 @@
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.metroTextBox4);
             this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(metroLabel4);
             this.Controls.Add(metroLabel3);
             this.Controls.Add(this.metroTextBox3);
             this.Controls.Add(this.metroLabel2);
@@ -702,6 +778,7 @@
             this.metroPanel2.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -743,5 +820,10 @@
         private System.Windows.Forms.ToolStripMenuItem changeDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem matchBloodToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toDonateToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ToolStripMenuItem matchBloodToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroTextBox metroTextBox6;
     }
 }

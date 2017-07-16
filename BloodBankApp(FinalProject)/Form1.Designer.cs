@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             MetroFramework.Controls.MetroLabel metroLabel1;
+            MetroFramework.Controls.MetroLabel metroLabel4;
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.loginBtn = new MetroFramework.Controls.MetroButton();
             this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
@@ -36,9 +37,12 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +55,16 @@
             metroLabel1.Size = new System.Drawing.Size(53, 19);
             metroLabel1.TabIndex = 2;
             metroLabel1.Text = "Email :";
+            // 
+            // metroLabel4
+            // 
+            metroLabel4.AutoSize = true;
+            metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
+            metroLabel4.Location = new System.Drawing.Point(618, 112);
+            metroLabel4.Name = "metroLabel4";
+            metroLabel4.Size = new System.Drawing.Size(74, 19);
+            metroLabel4.TabIndex = 13;
+            metroLabel4.Text = "Login As :";
             // 
             // metroTextBox1
             // 
@@ -96,7 +110,7 @@
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(584, 310);
+            this.loginBtn.Location = new System.Drawing.Point(783, 310);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(151, 45);
             this.loginBtn.Style = MetroFramework.MetroColorStyle.Red;
@@ -129,7 +143,7 @@
             this.metroTextBox2.Location = new System.Drawing.Point(618, 238);
             this.metroTextBox2.MaxLength = 32767;
             this.metroTextBox2.Name = "metroTextBox2";
-            this.metroTextBox2.PasswordChar = '\0';
+            this.metroTextBox2.PasswordChar = '●';
             this.metroTextBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.metroTextBox2.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox2.SelectedText = "";
@@ -142,6 +156,7 @@
             this.metroTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox2.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox2.UseSelectable = true;
+            this.metroTextBox2.UseSystemPasswordChar = true;
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
@@ -151,7 +166,7 @@
             this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(821, 310);
+            this.exitBtn.Location = new System.Drawing.Point(618, 310);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(151, 45);
             this.exitBtn.TabIndex = 7;
@@ -181,7 +196,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Admin",
             "User"});
-            this.comboBox1.Location = new System.Drawing.Point(728, 112);
+            this.comboBox1.Location = new System.Drawing.Point(726, 103);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(101, 28);
             this.comboBox1.TabIndex = 9;
@@ -192,24 +207,13 @@
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Bold;
             this.metroLabel3.ForeColor = System.Drawing.Color.Crimson;
-            this.metroLabel3.Location = new System.Drawing.Point(451, 31);
+            this.metroLabel3.Location = new System.Drawing.Point(466, 32);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(150, 25);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Red;
             this.metroLabel3.TabIndex = 11;
             this.metroLabel3.Text = "Blood Bank App";
             this.metroLabel3.UseCustomForeColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BloodBankApp_FinalProject_.Properties.Resources.loginPic;
-            this.pictureBox1.Location = new System.Drawing.Point(23, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 349);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // htmlLabel1
             // 
@@ -225,11 +229,34 @@
             this.htmlLabel1.Text = "Don\'t have an account? Create one";
             this.htmlLabel1.Click += new System.EventHandler(this.htmlLabel1_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BloodBankApp_FinalProject_.Properties.Resources._2;
+            this.pictureBox2.Location = new System.Drawing.Point(339, 21);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(384, 77);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 14;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BloodBankApp_FinalProject_.Properties.Resources.loginPic1;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(407, 334);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 387);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(metroLabel4);
             this.Controls.Add(this.htmlLabel1);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.pictureBox1);
@@ -246,6 +273,7 @@
             this.Style = MetroFramework.MetroColorStyle.Red;
             this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -263,6 +291,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

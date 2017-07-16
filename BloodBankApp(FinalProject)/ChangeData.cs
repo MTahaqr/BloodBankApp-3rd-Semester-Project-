@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
-    class ChangeData 
+    class ChangeData : DonorOrPatient 
     {
         private string id;
         private string name;
@@ -90,7 +90,7 @@ namespace BloodBankApp_FinalProject_
         }
         SqlConnection connection;
         SqlDataAdapter SDA1;
-        public SqlDataAdapter showsDonors()
+        public override SqlDataAdapter RefreshDonors()
         {
             connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             connection.Open();
@@ -99,6 +99,13 @@ namespace BloodBankApp_FinalProject_
 
             return SDA1;
            
+        }
+        public override SqlDataAdapter RefreshPatients()
+        {
+            SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
+            connection.Open();
+            SqlDataAdapter SDAP = new SqlDataAdapter("Select * from [RPDBTable]", connection);
+            return SDAP;
         }
         public SqlDataAdapter updateDonors()
         {

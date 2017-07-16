@@ -24,3 +24,4 @@ C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\B
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.Change.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.MatchBlood.resources
 C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.ToDonate.resources
+C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\obj\Debug\BloodBankApp_FinalProject_.Edit.resources

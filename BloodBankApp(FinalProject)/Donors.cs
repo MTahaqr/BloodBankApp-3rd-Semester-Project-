@@ -29,6 +29,7 @@ namespace BloodBankApp_FinalProject_
             // TODO: This line of code loads data into the 'registerDBDataSet16.RDBTable' table. You can move, or remove it, as needed.
             this.rDBTableTableAdapter5.Fill(this.registerDBDataSet16.RDBTable);
             menuStrip2.Visible = LoginData.checkLoginAs();
+            menuStrip1.Visible = !(LoginData.checkLoginAs());
 
             RegisterData RegisterDataObj = new RegisterData();
 
@@ -105,6 +106,20 @@ namespace BloodBankApp_FinalProject_
         {
             ToDonate ToDonateObj = new ToDonate();
             ToDonateObj.Show();
+            this.Hide();
+        }
+
+        private void matchBloodToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit EditObj = new Edit();
+            EditObj.Show();
             this.Hide();
         }
     }

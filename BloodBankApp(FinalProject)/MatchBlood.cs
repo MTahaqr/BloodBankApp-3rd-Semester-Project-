@@ -19,6 +19,10 @@ namespace BloodBankApp_FinalProject_
             this.matchBloodToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.matchBloodToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.matchBloodToolStripMenuItem.BackColor = Color.Crimson;
+            this.matchBloodToolStripMenuItem1.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matchBloodToolStripMenuItem1.ForeColor = System.Drawing.Color.White;
+            this.matchBloodToolStripMenuItem1.BackColor = Color.Crimson;
+
 
         }
 
@@ -31,7 +35,9 @@ namespace BloodBankApp_FinalProject_
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            patients patientsObj = new patients();
+            patientsObj.Show();
+            this.Hide();
         }
 
         private void searchToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -125,8 +131,54 @@ namespace BloodBankApp_FinalProject_
         {
             // TODO: This line of code loads data into the 'registerDBDataSet18.RDBTable' table. You can move, or remove it, as needed.
             this.rDBTableTableAdapter2.Fill(this.registerDBDataSet18.RDBTable);
+            menuStrip1.Visible = LoginData.checkLoginAs();
+            menuStrip2.Visible = !(LoginData.checkLoginAs());
 
 
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Register RegisterObj = new Register();
+            RegisterObj.Show();
+            this.Hide();
+        }
+
+        private void patientsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            patients patientsObj = new patients();
+            patientsObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Search SearchObj = new Search();
+            SearchObj.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Donors DonorsObj = new Donors();
+            DonorsObj.Show();
+            this.Hide();
+
+        }
+
+        private void matchBloodToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit EditObj = new Edit();
+            EditObj.Show();
+            this.Hide();
         }
     }
 }

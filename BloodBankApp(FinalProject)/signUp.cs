@@ -24,17 +24,21 @@ namespace BloodBankApp_FinalProject_
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
-            
+            Form1 Form1Obj = new Form1();
+            Form1Obj.Show();
+            this.Hide();
+
         }
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
             SignUpData SignUpDataObj = new SignUpData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text);
             SignUpDataObj.signUp();
-            //Register RegisterObj = new Register();
-            //this.Hide();
-            //RegisterObj.Show();
+            Form1 Form1Obj = new Form1();
+            this.Hide();
+            Form1Obj.Show();
+            MetroFramework.MetroMessageBox.Show(this, "Now you can Login", "Account Created Sucessfully", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
         }
     }
 }

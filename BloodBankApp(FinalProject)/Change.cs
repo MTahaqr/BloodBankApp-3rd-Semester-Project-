@@ -89,13 +89,12 @@ namespace BloodBankApp_FinalProject_
             string bloodGroup = metroGrid1.SelectedRows[0].Cells[8].Value.ToString();
             string registerAs = metroGrid1.SelectedRows[0].Cells[9].Value.ToString();
 
-            ChangeDataObj = new ChangeData(id,name,fathersName,age ,address ,phone ,dob ,gender ,bloodGroup);
 
             //SqlDataAdapter SDA2 = ChangeDataObj.DonorsListRefresh();
             //DataTable Data = new DataTable();
             //SDA2.Fill(Data);
             //metroGrid1.DataSource = Data;
-
+            ChangeDataObj = new ChangeData(id, name, fathersName, age, address, phone, dob, gender, bloodGroup);
             SqlDataAdapter SDA2 = ChangeDataObj.updateDonors();
             DataTable Data = new DataTable();
             SDA2.Fill(Data);
@@ -208,11 +207,15 @@ namespace BloodBankApp_FinalProject_
         private void metroButton4_Click(object sender, EventArgs e)
         {
             string id = metroGrid1.SelectedRows[0].Cells[0].Value.ToString();
-            ChangeData ChangeDataObj1 = new ChangeData(id );
+            ChangeData ChangeDataObj1 = new ChangeData(id);
             ChangeDataObj1.deleteDonor();
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from [RDBTable]", connection);
+            //SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from [RDBTable]", connection);
+            //DataTable Data = new DataTable();
+            //SDA1.Fill(Data);
+            //metroGrid1.DataSource = Data;
+            SqlDataAdapter SDA1 = ChangeDataObj1.RefreshDonors();
             DataTable Data = new DataTable();
             SDA1.Fill(Data);
             metroGrid1.DataSource = Data;
@@ -225,10 +228,14 @@ namespace BloodBankApp_FinalProject_
             ChangeDataObj1.deletePatient();
             SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
             connection.Open();
-            SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from [RPDBTable]", connection);
+            SqlDataAdapter SDA1 = ChangeDataObj1.RefreshPatients();
             DataTable Data = new DataTable();
             SDA1.Fill(Data);
             metroGrid2.DataSource = Data;
+            //SqlDataAdapter SDA1 = new SqlDataAdapter("Select * from [RPDBTable]", connection);
+            //DataTable Data = new DataTable();
+            //SDA1.Fill(Data);
+            //metroGrid2.DataSource = Data;
         }
     }
 }

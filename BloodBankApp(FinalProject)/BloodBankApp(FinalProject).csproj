@@ -87,6 +87,12 @@
     <Compile Include="Donors.Designer.cs">
       <DependentUpon>Donors.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>RegPatDBDataSet8.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RegPatDBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RegPatDBDataSet9.xsd</DependentUpon>
+    </Compile>
     <Compile Include="RegPatInt.cs" />
     <Compile Include="Search.cs">
       <SubType>Form</SubType>
@@ -289,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Donors.resx">
       <DependentUpon>Donors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -655,6 +669,17 @@
     <None Include="RegPatDBDataSet8.xss">
       <DependentUpon>RegPatDBDataSet8.xsd</DependentUpon>
     </None>
+    <None Include="RegPatDBDataSet9.xsc">
+      <DependentUpon>RegPatDBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="RegPatDBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RegPatDBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RegPatDBDataSet9.xss">
+      <DependentUpon>RegPatDBDataSet9.xsd</DependentUpon>
+    </None>
     <None Include="Resources\loginPic.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -678,6 +703,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>RegPatDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\loginPic.png" />
+    <None Include="Resources\2.jpg" />
     <Content Include="signUpDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

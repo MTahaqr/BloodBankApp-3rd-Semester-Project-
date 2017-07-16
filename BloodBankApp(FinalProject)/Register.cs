@@ -30,6 +30,7 @@ namespace BloodBankApp_FinalProject_
         {
             LoginData loginDataObj = new LoginData();
             menuStrip2.Visible = LoginData.checkLoginAs();
+            menuStrip1.Visible = !(LoginData.checkLoginAs());
         }
 
         private void patientsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,14 +108,14 @@ namespace BloodBankApp_FinalProject_
             {
                 if (radioBtn2 == "Donor")
                 {
-                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
-                    RegisterDataObj.RegisterDonors();
+                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2,metroTextBox6.Text);
+                    RegisterDataObj.RegisterOrUpdateDonors();
                     MetroFramework.MetroMessageBox.Show(this, "Donor Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else if(radioBtn2 == "Patient")
                 {
-                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2);
-                    RegisterDataObj.RegisterPatients();
+                    RegisterData RegisterDataObj = new RegisterData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text, dateTimePicker1.Text, radioBtn1, comboBox1.Text, radioBtn2, metroTextBox6.Text);
+                    RegisterDataObj.RegisterOrUpdatePatients();
                     MetroFramework.MetroMessageBox.Show(this, "Patients Registered SuccessFully", "Registration Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     //RegisterPatientData RegisterPatientDataObj = new RegisterPatientData(metroTextBox1.Text, metroTextBox2.Text, metroTextBox3.Text, metroTextBox4.Text, metroTextBox5.Text,dateTimePicker1.Text, radioBtn1 , comboBox1.Text, radioBtn2 );
@@ -198,5 +199,22 @@ namespace BloodBankApp_FinalProject_
             ToDonateObj.Show();
             this.Hide();
         }
+
+
+        private void matchBloodToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MatchBlood MatchBloodObj = new MatchBlood();
+            MatchBloodObj.Show();
+            this.Hide();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Edit EditObj = new Edit();
+            EditObj.Show();
+            this.Hide();
+        }
+
+        
     }
 }

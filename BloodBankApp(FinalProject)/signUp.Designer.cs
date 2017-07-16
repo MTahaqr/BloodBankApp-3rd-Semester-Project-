@@ -36,11 +36,12 @@
             this.signUpBtn = new MetroFramework.Controls.MetroButton();
             this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.metroTextBox3 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             metroLabel1 = new MetroFramework.Controls.MetroLabel();
             metroLabel3 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -79,12 +80,12 @@
             this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(382, 314);
+            this.exitBtn.Location = new System.Drawing.Point(178, 319);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(151, 45);
             this.exitBtn.Style = MetroFramework.MetroColorStyle.Red;
             this.exitBtn.TabIndex = 13;
-            this.exitBtn.Text = "Exit";
+            this.exitBtn.Text = "Back";
             this.exitBtn.UseCustomBackColor = true;
             this.exitBtn.UseCustomForeColor = true;
             this.exitBtn.UseSelectable = true;
@@ -134,7 +135,7 @@
             this.signUpBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signUpBtn.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
-            this.signUpBtn.Location = new System.Drawing.Point(143, 314);
+            this.signUpBtn.Location = new System.Drawing.Point(343, 319);
             this.signUpBtn.Name = "signUpBtn";
             this.signUpBtn.Size = new System.Drawing.Size(151, 45);
             this.signUpBtn.TabIndex = 11;
@@ -204,7 +205,7 @@
             this.metroTextBox3.Location = new System.Drawing.Point(178, 234);
             this.metroTextBox3.MaxLength = 32767;
             this.metroTextBox3.Name = "metroTextBox3";
-            this.metroTextBox3.PasswordChar = '\0';
+            this.metroTextBox3.PasswordChar = '●';
             this.metroTextBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.metroTextBox3.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.metroTextBox3.SelectedText = "";
@@ -217,22 +218,9 @@
             this.metroTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.metroTextBox3.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTextBox3.UseSelectable = true;
+            this.metroTextBox3.UseSystemPasswordChar = true;
             this.metroTextBox3.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox3.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Bold;
-            this.metroLabel4.ForeColor = System.Drawing.Color.DarkRed;
-            this.metroLabel4.Location = new System.Drawing.Point(420, 30);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(150, 25);
-            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Red;
-            this.metroLabel4.TabIndex = 17;
-            this.metroLabel4.Text = "Blood Bank App";
-            this.metroLabel4.UseCustomForeColor = true;
             // 
             // pictureBox1
             // 
@@ -244,13 +232,23 @@
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BloodBankApp_FinalProject_.Properties.Resources._2;
+            this.pictureBox2.Location = new System.Drawing.Point(359, 10);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(384, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
             // signUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 387);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.metroLabel4);
             this.Controls.Add(metroLabel3);
             this.Controls.Add(this.metroTextBox3);
             this.Controls.Add(this.metroLabel2);
@@ -264,6 +262,7 @@
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.signUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -277,7 +276,7 @@
         private MetroFramework.Controls.MetroButton signUpBtn;
         private MetroFramework.Controls.MetroTextBox metroTextBox1;
         private MetroFramework.Controls.MetroTextBox metroTextBox3;
-        private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

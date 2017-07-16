@@ -7,7 +7,8 @@ using System.Data.SqlClient;
 
 namespace BloodBankApp_FinalProject_
 {
-    class SearchData :  RegDonorInt ,RegPatInt  
+    //class SearchData :  RegDonorInt ,RegPatInt  
+    class SearchData
     {
         private string dOrPeti;
         private string searchBy;
@@ -28,6 +29,10 @@ namespace BloodBankApp_FinalProject_
             set { searchFor = value; }
             get { return searchFor; }
         }
+        public SearchData ()
+        {
+
+        }
       
         public SearchData(string dOrPetiText, string searchByText, string searchForText)
         {
@@ -40,25 +45,25 @@ namespace BloodBankApp_FinalProject_
         /// //
         /// </summary>
         
-        public void RegisterDonor()
-        {
-            //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
-            //connection.Open();
-            //SqlDataAdapter SDA = new SqlDataAdapter("insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
-            //SDA.SelectCommand.ExecuteNonQuery();
-            //connection.Close();
+        //public void RegisterDonor()
+        //{
+        //    //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegisterDB.mdf;Integrated Security=True");
+        //    //connection.Open();
+        //    //SqlDataAdapter SDA = new SqlDataAdapter("insert into [RDBTable] (name,fathersName,age,address,phone,dob,gender,bloodGroup,registerAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
+        //    //SDA.SelectCommand.ExecuteNonQuery();
+        //    //connection.Close();
 
 
-        }
-        public void RegisterPatient()
-        {
-            //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
-            //connection.Open();
-            //SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
-            //SDA.SelectCommand.ExecuteNonQuery();
-            //connection.Close();
+        //}
+        //public void RegisterPatient()
+        //{
+        //    //SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\user\Documents\Visual Studio 2015\Projects\BloodBankApp(FinalProject)\BloodBankApp(FinalProject)\RegPatDB.mdf;Integrated Security=True");
+        //    //connection.Open();
+        //    //SqlDataAdapter SDA = new SqlDataAdapter("insert into [RPDBTable] (Name,FathersName,Age,Address,Phone,DateOfBirth,Gender,BloodGroup,RegisteredAs) values ('" + name + "','" + fathersName + "','" + age + "','" + address + "','" + phoneNo + "','" + dob + "','" + gender + "','" + bloodGroup + "','" + registerAs + "')", connection);
+        //    //SDA.SelectCommand.ExecuteNonQuery();
+        //    //connection.Close();
 
-        }
+        //}
         SqlConnection conn;
         SqlDataAdapter sda;
         public SqlDataAdapter SearchForDonor()
